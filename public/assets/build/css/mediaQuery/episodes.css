@@ -1,0 +1,9 @@
+@media (max-width:768px) {
+  .episodes {
+    margin-top: 55px;
+  }
+  .episodes h4.episoTop {
+    margin-bottom: 10px !important;
+    margin-top: 20px !important;
+  }
+}

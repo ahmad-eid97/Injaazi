@@ -1,0 +1,4877 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+@font-face {
+	font-family: Cocon Next Arabic;
+	src: url('../fonts/Cocon_Next_Arabic_Light.eot'); /* IE9 Compatibility Modes */
+	src: url('../fonts/Cocon_Next_Arabic_Light.eot?') format('eot'),  /* IE6-IE8 */
+		url('../fonts/Cocon_Next_Arabic_Light.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/Cocon_Next_Arabic_Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Cocon_Next_Arabic_Light.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: Droid Arabic Naskh;
+	src: url('../fonts/DroidNaskh-Regular.eot'); /* IE9 Compatibility Modes */
+	src: url('../fonts/DroidNaskh-Regular.eot?') format('eot'),  /* IE6-IE8 */
+		url('../fonts/DroidNaskh-Regular.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/DroidNaskh-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/DroidNaskh-Regular.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
+}
+
+body {
+    color: #73879c;
+    background: #26323d;
+    font-family: B Yekan, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+
+           * {
+   font-family: Cocon Next Arabic;
+}
+
+.toggle {
+    float: right;
+    margin: 0;
+    padding-top: 16px;
+    width: 70px;
+    background: #26323d;
+    padding-bottom: 13px;
+}
+
+.toggle a {
+    padding: 15px 20px 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.top_nav .navbar-right {
+    margin: 0;
+    width: auto !important;
+    float: left!important;
+    position: relative;
+}
+
+.lang-chooser
+{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.fa-chevron-right
+{
+    padding-left: 15px;
+    color: #73879c;
+}
+
+.fa-chevron-left
+{
+    padding-left: 15px;
+    color: #73879c;
+}
+
+.logo
+{
+        width: 60%;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+#date
+{
+    float: right;
+    margin-right: 50px;
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.nav.side-menu > li > a {
+    /*margin-bottom: 6px;*/
+    color: #b8c7ce;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 1px solid #2e3944;
+}
+
+.nav.child_menu > li > a {
+    font-weight: 500;
+    color: #ba9e4a !important;
+    font-size: 15px;
+    padding: 9px;
+}
+
+.nav li.current-page {
+    background: transparent;
+}
+
+.nav.side-menu > li.current-page {
+    border: none;
+}
+
+.nav.side-menu > li.current-page a {
+    color: #f2d145;
+}
+
+.bad input {
+    border: 1px solid #ce5454;
+    box-shadow: 0 0 4px -2px #ce5454;
+    position: relative;
+    left: 0;
+    font-family: Droid Arabic Naskh;
+}
+
+textarea.form-control {
+    height: auto;
+    font-family: Droid Arabic Naskh;
+}
+
+.item input {
+    transition: .42s;
+    font-family: Droid Arabic Naskh;
+        margin-bottom: 15px;
+}
+
+.item .alert {
+    float: right;
+    margin: -15px 20px 0 0;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px 3px 4px 4px;
+    background-color: #ce5454;
+    max-width: 170px;
+    white-space: pre;
+    position: relative;
+    right: -15px;
+    opacity: 0;
+    z-index: 1;
+    transition: .15s ease-out;
+    display: none;
+}
+
+.login_content form input[type="text"] {
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    border: 1px solid #c5c7cb;
+    color: #777;
+    margin: 0 0 20px;
+    width: 100%;
+    font-size: 18px;
+    font-family: Droid Arabic Naskh;
+}
+
+.login_content form input[type="password"] {
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    border: 1px solid #c5c7cb;
+    color: #777;
+    margin: 0 0 20px;
+    width: 100%;
+    font-size: 18px;
+    font-family: Droid Arabic Naskh;
+}
+
+.login_content div .reset_pass {
+    margin-top: 13px !important;
+    margin-right: 39px;
+    float: left;
+    font-size: 20px;
+}
+
+.info-box {
+    display: block;
+    min-height: 185px;
+    background: #fdfdfe;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+    /*cursor: pointer;*/
+}
+.owl-carousel .owl-item img {
+    display: inline-block;
+    width: auto;
+}
+.owl-carousel .owl-item{
+    padding-top: 34px;
+}
+
+.mid-logo-icon
+{
+    text-align: center;
+    margin-top: -72px;
+}
+
+.mid-left h6
+{
+    text-align: left;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.mid-left span
+{
+    background: #6daa27;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-border-radius: 2px 0 0 0;
+    border-radius: 2px 0 0 0;
+}
+
+.mobile-mid-down-img1-right
+{
+    text-align: right;
+}
+
+.mobile-mid-down-img2-center
+{
+    text-align: center;
+}
+
+.mobile-mid-down-img3-left
+{
+    text-align: left;
+}
+
+.mid-text1
+{
+    text-align: center;
+}
+
+.percentages
+{
+    font-size: 20px;
+    color: #6daa27;
+}
+
+.mid-down-imgs
+{
+    margin-top: 10px;
+}
+
+.mid-down-img1
+{
+    text-align: right;
+}
+
+.mid-down-img2
+{
+    text-align: center;
+}
+
+.mid-down-img3
+{
+    text-align: left;
+}
+
+.plustop
+{
+    padding: 40px;
+}
+
+.plusbtn
+{
+    text-align: center;
+    margin-top: 0px;
+    border-style: dashed;
+    border-width: 2px;
+    color:#c0c4ce;
+}
+
+.plusbtn img
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.plusbtn h5
+{
+    padding-bottom: 15px;
+}
+
+.bihd
+{
+    text-decoration: underline;
+}
+
+
+
+.alkul
+{
+    margin-bottom: 15px;
+}
+
+.alkul a
+{
+    color: #8695a9;
+}
+
+.alkul a:hover
+{
+    color: #8695a9;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs>li {
+    float: right;
+    background: #f7f8fa;
+}
+
+.tasjil.btn-primary
+{
+    padding:6px 20%;
+    color: #fff;
+    background-color: #6daa27;
+    border-color: #6daa27;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tasjil.btn-primary:hover 
+{
+    color: #fff;
+    background-color: #6daa27;
+    border-color: #6daa27;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #6daa27;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.tahdid
+{
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.abdl
+{
+    background-color: #fff;
+}
+
+.span20
+{
+    background: #ccae32;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.span250
+{
+    background: #6daa27;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.span10
+{
+    background: #707070;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.small-user
+{
+    padding-top: 3px;
+    display: block;
+}
+
+    .info-box.mid3 {
+    display: block;
+    min-height: 255px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+
+.mobile-down-imgs
+{
+    margin-top: 15px;
+}
+
+.group4107
+{
+    margin-left: 10px;
+}
+
+.group4083
+{
+    margin-left: 10px;
+}
+
+.path2165
+{
+    margin-top: -16px;
+    text-align: left;
+}
+
+.percent98a {
+    text-align: left;
+    font-size: 14px;
+}
+
+.t2a
+{
+    color: #8191a5;
+}
+
+.boxs
+{
+        /*box-shadow: 0 2px 5px 0 rgb(204, 174, 50), 0 2px 10px 0 rgba(204, 174, 50);
+    border: 1px solid #ccae32 !important;*/
+}
+
+.boxs2 {
+    /*box-shadow: 0 2px 5px 0 rgb(112, 112, 112), 0 2px 10px 0 rgba(112, 112, 112);*/
+    /*border: 1px solid #707070 !important;*/
+}
+
+.popup-box ul
+{
+        direction: ltr;
+        list-style: none;
+}
+
+.borderbox
+{
+    border-bottom: 1px solid #8191a5;
+    margin-bottom: 8px;
+
+}
+
+.popup-box .group4061
+{
+    margin-left: 10px;
+}
+
+.deletebox
+{
+    color: #fd5d5d;
+}
+
+.fa-bell
+{
+    color: #d1d1d2;
+    font-size: 20px !important;
+}
+
+.bell
+{
+    margin-left: 10px;
+}
+
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: #ba9e4a !important;
+}
+
+.has-search .form-control-feedback {
+    left: initial;
+    right: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-left: 12px;
+    padding-right: 34px;
+}
+
+.mid-row1
+{
+    padding-top: 15px;
+}
+
+.clickm
+{
+    padding-top: 5px;
+    text-align: left;
+}
+
+.mid-row2
+{
+    margin-bottom: 15px;
+}
+
+.mid-text2
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.percent98
+{
+    color: #6daa27;
+    font-size: 14px;
+}
+
+.mid-row3-icon1
+{
+   margin-right: -10px;
+}
+
+.mid-row3-icon2
+{
+   margin-right: -5px;
+}
+
+.mid-row3-icon3
+{
+    margin-right: 0px;
+}
+
+.mid-row3-icon4
+{
+       margin-right: 0px;
+}
+
+.info-box-content {
+            padding: 20px 10px;
+    margin-left: 3px;
+}
+
+.info-box-text {
+        text-transform: uppercase;
+    color: #c0e8df;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ba9e4a;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.info-box-icon {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 90px;
+    width: 40%;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0,0,0,0.2);
+}
+
+span i
+{
+    color: #1d857c;
+}
+
+.user-notification.bg-green, .callout.callout-success, .alert-success, .label-success, .modal-success .modal-body {
+    background-color: #f0203a !important;
+}
+
+.bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body {
+    background-color: #ba9e4a !important;
+}
+
+.bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
+    background-color: #dd4b39 !important;
+}
+
+.user-notification.bg-green {
+    background: #fd4e4e !important;
+    border: 1px solid #fd4e4e !important;
+    color: #fff;
+}
+
+.sidebar-footer {
+    bottom: 0;
+    clear: both;
+    display: block;
+    padding: 5px 0 0;
+    position: fixed;
+    width: 230px;
+    background: transparent;
+}
+
+footer {
+    background: #2b8069 !important;
+    padding: 20px 20px;
+    display: block;
+    font-size: 15px;
+}
+
+.search-down img
+{
+    height: 29px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.nav-md .navbar-nav .open .dropdown-menu.search-down {
+     width: calc(100vw - 247px);
+    height: 300px;
+}
+
+.nav-sm  .navbar-nav .open .dropdown-menu.search-down {
+    width: calc(100vw - 87px);
+    height: 300px;
+}
+
+.form-control {
+    border-radius: 0;
+    width: 100%;
+}
+
+/*
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    height: 34px;
+    width: 100%;
+}
+*/
+
+/*
+.search-downss.navbar-nav .open .dropdown-menu {
+    position: absolute;
+    background: #fff;
+    margin-top: 0;
+    border: 1px solid #d9dee4;
+    left: 0;
+    right: auto;
+     width: 220px; 
+    width: calc(100vw - 247px) !important;
+}
+*/
+
+
+.nav.side-menu.homeicons > li {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+.nav.side-menu.homeicons > li:hover
+{
+    color: green !important;
+}
+
+.nav.side-menu.homeicons > li > a:hover {
+    color: #848484 !important;
+    text-decoration: none;
+    background: 0 0;
+}
+
+.nav.side-menu > li.active > a {
+    text-shadow: rgba(0, 0, 0, .25) 0 -1px 0;
+    background:  rgba(255,255,255,.15);
+    box-shadow: rgba(0, 0, 0, .25) 0 1px 0, inset rgba(255, 255, 255, .16) 0 1px 0;
+    color: #f4d346;
+}
+
+.nav.side-menu > li.active {
+    border-right: none;
+    border-left: none;
+}
+
+.left_col.homepage_left
+{
+    background: white;
+}
+
+.left_col {
+    background: #26323d;
+}
+
+.nav_title.homepagetoplogobg {
+    width: 230px;
+    float: left;
+    background: white;
+    border-radius: 0;
+    height: 57px;
+    /* border-bottom: 1px solid #e7e7e7; */
+}
+
+.nav.side-menu.homeicons > li > a {
+    margin-bottom: 6px;
+    color: #848484;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav_menu.homepagetopmenu {
+    float: right;
+    background: #ba9e4a;
+    border-bottom: 1px solid #463b1a;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.nav_menu {
+float: right;
+    background: #f5f6f8;
+    border-bottom: 1px solid #b2b2b3;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.top_nav .nav .open > a {
+    background: #ba9e4a;
+}
+
+.top_nav.homepagetop .navbar-right li {
+        display: inline-block;
+    float: left;
+    position: static;
+    padding-top: 5px;
+}
+
+.nav.navbar-nav > li > a {
+    color: #fbffff!important;
+    font-size: 18px;
+    background: #6daa27;
+}
+
+.message a {
+    color: #fbffff!important;
+    font-size: 18px;
+     background: transparent !important; 
+}
+
+.message a:hover {
+    color: #fbffff!important;
+    font-size: 18px;
+     background: transparent !important; 
+}
+
+.navbar-nav .open .dropdown-menu.msg_list {
+    width: 300px !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 300px !important;
+}
+
+a {
+    color: #fbffff;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus, a:hover {
+    color: #fbffff;
+    text-decoration: none;
+}
+
+.top_nav .nav > li > a:hover {
+    background: #6daa27;
+}
+
+.top_nav .nav .open > a:hover {
+    background: #6daa27;
+}
+
+.top_nav .nav .open > a:focus {
+    background: #6daa27;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    /*background-color: #eee;*/
+}
+
+.toggle.homepagetoggle {
+    float: right;
+    margin: 10px 0px 0px 0px;
+    padding-top: 10px;
+    width: 70px;
+}
+
+.sidebar-footer.homepagesidefooter {
+    bottom: 0;
+    clear: both;
+/*    display: block;*/
+    padding: 5px 0 0;
+    position: fixed;
+    width: 230px;
+    background: #fff;
+    display: none;
+}
+
+.nav.side-menu.homeicons > li.active > a {
+    text-shadow: rgba(0, 0, 0, .25) 0 -1px 0;
+    background: white;
+     box-shadow: none; 
+}
+
+.nav-sm ul.nav.child_menu {
+    right: 100%;
+    position: absolute;
+    top: 0;
+    width: 210px;
+    z-index: 4000;
+    background: #135d5e;
+    display: none;
+}
+
+body .container.body .right_col {
+    background: #f5f6f8;
+}
+
+.topheader {
+    background: #f5f6f8;
+    padding: 10px 15px 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.topheader h6
+{
+    margin-top: 60px;
+    color: #000;
+    font-size: 16px;
+}
+
+.progress-bar {
+
+    background-color: #6daa27;
+    line-height: 14px;
+  
+}
+
+.bar2.progress-bar {
+
+    background-color: #abb6c4;
+    line-height: 14px;
+  
+}
+
+.progress {
+   overflow: hidden;
+    height: 12px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    margin-top: 5px;
+}
+
+.progress.progress_sm {
+    border-radius: 0;
+    margin-bottom: 5px;
+    height: 10px!important;
+}
+
+.bg-green {
+    background: #00a65a !important;
+    border: 1px solid #00a65a !important;
+    color: #fff;
+}
+
+p
+{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.dropdown_btn
+{
+        background: #2b8069!important;
+    color: white;
+   width: 100%;
+    margin-right: 0px;
+}
+
+.x_panel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border-radius: .3rem;
+    column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+
+html body .message-box .message-widget a, html body .navbar-dark .mailbox .message-center a {
+    text-align: right;
+}
+
+
+html body .message-box .message-widget a .user-img, html body .navbar-dark .mailbox .message-center a .user-img {
+    margin: 0 0px 15px 10px;
+}
+
+
+.form-control.dashboard-form1 {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #f3f3f3;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+textarea.form-control.dashboard-form2 {
+    height: 185px;
+    font-family: Droid Arabic Naskh;
+    background: #f3f3f3;
+    border: 1px solid #dedede;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.top-search-box
+{
+    margin-left: 210px;
+    margin-top: 10px;
+}
+
+.search-box
+{
+    margin-left: 30px;
+    padding: 8px 10px 8px 10px;
+    /*background: #eaeef1;*/
+    font-size: 15px;
+    border-radius: 0px;
+    margin-top: 2px;
+}
+
+.topheader img
+{
+    padding-left: 5px;
+}
+
+.nav-sm .c100 {
+  position: relative;
+    font-size: 180px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    float: right;
+    margin-top: 25px;
+    margin-right: 5px;
+    background-color: #2b8069;
+}
+
+.nav-sm .logo {
+    width: 100%;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+.nav-sm .nav.side-menu li.active-sm {
+    border-left: 5px solid rgba(255,255,255,.15);
+}
+
+.nav-md ul.nav.child_menu li:after {
+    border-right: 1px solid rgba(255,255,255,.15);
+    bottom: 0;
+    content: "";
+    right: 27px;
+    position: absolute;
+    top: 0;
+}
+
+.nav-md ul.nav.child_menu li:before {
+    background: rgba(255,255,255,.15);
+    bottom: auto;
+    content: "";
+    height: 8px;
+    right: 23px;
+    margin-top: 15px;
+    position: absolute;
+    left: auto;
+    width: 8px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.bg-green.menu2
+{
+    background: #ba9e4a !important;
+    border: 1px solid #ba9e4a !important;
+    color: #fff;
+}
+
+.bg-red.menu4 {
+    background: #ba9e4a !important;
+    border: 1px solid #ba9e4a !important;
+    color: #fff;
+}
+
+.border-primary {
+    border-color: #2b8069!important;
+}
+
+.info-box.menus {
+    display: block;
+    min-height: 90px;
+    background: #2b8069;
+    width: 100%;
+    /* box-shadow: 0 1px 1px rgba(0,0,0,0.1); */
+    border-radius: 2px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    margin-top: 20px;
+}
+
+
+.btn-success.contacts {
+    color: #fff;
+    background-color: #8b9aa7 !important;
+    border-color: #8b9aa7 !important;
+}
+
+.btn-primary.contacts {
+    color: #fff;
+    background-color: #ba9e4a !important;
+    border-color: #ba9e4a !important;
+}
+
+label.joblabel {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 17px;
+        float: right;
+}
+
+.hr-line2 hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.callout.callout-success, .alert-success, .label-success, .modal-success .modal-body.joblist_label {
+    background-color: #2b8069 !important;
+    font-size: 14px;
+}
+
+.bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body.joblist_label {
+    background-color: #dd4b39 !important;
+    font-size: 15px;
+}
+
+.bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body.joblist_label {
+    background-color: #ba9e4a !important;
+    font-size: 16px;
+}
+
+.label-primary.joblist_label {
+    background-color: #337ab7;
+    font-size: 14px;
+}
+
+.btn-success.reason {
+     background: #ba9e4a;
+    border: 1px solid #2b8069;
+    color: #2c5449;
+    width: 60%;
+}
+
+.btn-success.reason:hover {
+    background: #ba9e4a;
+    color: #2c5449 !important;
+    text-decoration: none;
+}
+
+h4.faq-header
+{
+    font-size: 20px;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body.faq-body {
+    border-top-color: #ddd;
+    font-size: 15px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'FontAwesome';
+    content: "\f078"; /* "play" icon */
+    float: left;
+    color: #2b8069;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+/*    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); */
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+/*    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); */
+    color: #454444;
+}
+
+.panel-title.faq-title {
+   margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    text-align: right;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #b5a775d9;
+    border-color: #ddd;
+}
+
+.faq-title a:focus, .faq-title a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+input[type=file] {
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.btn-primary.job_form_submit {
+    color: #fff;
+    background-color: #2b8069;
+    border-color: #2b8069;
+}
+
+.btn-primary.job_form_submit:hover {
+    color: #fff;
+    background-color: #2b8069;
+    text-decoration: none;
+}
+
+textarea.form-control.introduction {
+    height: auto;
+    font-family: Droid Arabic Naskh;
+    margin-bottom: 10px;
+}
+
+.btn-success.contact_submit {
+    background: #2b8069;
+    border: 1px solid #2b8069;
+}
+
+textarea.form-control.contact
+{
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: baseline;
+    border-top: 1px solid #ddd;
+    margin-top: 70px;
+}
+.input-group-btn > .btn:active,
+.input-group-btn > .btn:focus,
+.input-group-btn > .btn:hover {
+    z-index: 2;
+    background-color: #ba9e4a !important;
+    color: white;
+}
+
+.top_search .input-group-btn button {
+    border-radius: 25px 0 0 25px!important;
+    border: 1px solid rgba(221, 226, 232, .49);
+    border-right: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    color: #93a2b2;
+    margin-bottom: 0!important
+}
+
+.menus .info-box-content {
+    padding: 20px 10px;
+    margin-left: 20px;
+}
+
+.nav>li>a>img
+{
+    margin-left: 12px;
+    /*width: 25px;
+    height: 22px;*/
+}
+
+.t2
+{
+    color: #6daa27;
+}
+
+.select-dropdowns
+{
+    margin-bottom: 10px;
+}
+
+.tafsm
+{
+        margin-top: 30px;
+}
+
+.tafsbox.info-box {
+    display: block;
+    min-height: 253px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+
+.tafsim
+{
+    margin-top: 35px;
+}
+
+.group4719
+{
+        margin-left: 10px;
+    margin-right: 15px;
+}
+
+.percent80
+{
+        color: #000;
+    font-size: 30px;
+    padding-right: 50px;
+}
+
+.pb102.progress {
+   overflow: hidden;
+    height: 5px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    margin-top: 5px;
+}
+
+.pb102 .progress-bar {
+    background-color: #4ecff6;
+    line-height: 14px;
+}
+
+.pb102a
+{
+    margin-top: 10px;
+        margin-bottom: 25px;
+}
+
+.pb25000.progress {
+   overflow: hidden;
+    height: 5px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    margin-top: 5px;
+}
+
+.pb25000 .progress-bar {
+    background-color: #fecc47;
+    line-height: 14px;
+}
+
+.pb25000a
+{
+    margin-top: 10px;
+        margin-bottom: 25px;
+}
+
+.img102
+{
+    background-color: #4ecff6;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img102
+{
+    float: right;
+    width: 25px;
+}
+
+.img25000 {
+    background-color: #fecc47;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img25000
+{
+    float: right;
+    width: 25px;
+}
+
+
+.t102
+{
+        margin-right: 28px;
+}
+
+.t200
+{
+    float: left;
+}
+
+.c25000
+{
+    font-weight: bold;
+    color: black;
+        font-size: 13px;
+}
+
+.l102.info-box {
+    display: block;
+    min-height: 60px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+
+.hilqatbox
+{
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.hilqat
+{
+        float: left;
+    width: 30px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.box2500.info-box {
+    display: block;
+    min-height: 170px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+
+.b2500
+{
+    padding-top: 15px;
+    
+}
+
+.t2500
+{
+        font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.c3000
+{
+    font-size: 10px;
+}
+
+.greenimg
+{
+    padding-left: 5px;
+}
+
+.gmimg
+{
+    text-align: center;
+}
+
+.hilqatmb.info-box
+{
+    display: block;
+    min-height: 330px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+
+.amrbin
+{
+    float: left;
+    margin-left: 20px;
+}
+
+.hil-amr-box
+{
+        text-align: center;
+    margin-top: 25px;
+}
+
+.ajmath-mt
+{
+    padding-top: 10px;
+}
+
+.hasr
+{
+        background-color: #6eb02c;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+
+.hilqat-pb
+{
+        padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.hilqat-p2
+{
+        padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.img102a
+{
+
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img102a
+{
+    float: right;
+    width: 25px;
+}
+
+.c25000a
+{
+    font-weight: bold;
+    color: black;
+        font-size: 13px;
+}
+
+.c25000a1
+{
+        font-size: 11px;
+}
+
+.cs200
+{
+    font-size: 8px;
+    padding-right: 5px;
+}
+
+.tasm
+{
+    padding-top: 10px;
+}
+
+.avjath
+{
+        color: #69ac21;
+}
+
+
+
+.abdl-ahmd
+{
+        padding-right: 15px;
+}
+
+.cb
+{
+    color: #000;
+}
+
+.n1
+{
+        background-color: #dfdfdf;
+    height: 100%;
+    border-radius: 0px;
+    font-size: 10px;
+    width: 15px;
+    text-align: center;
+    color: #3f4249;
+}
+
+.percent92
+{
+    color: #69ac21;
+}
+
+.pb92 .progress-bar {
+    background-color: #69ac21;
+    line-height: 14px;
+}
+
+.pb92.progress {
+    overflow: hidden;
+    height: 5px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    margin-top: 5px;
+}
+
+.n14
+{
+    color: #4dcef6;
+    font-size: 22px;
+}
+
+.n30
+{
+    font-size: 10px;
+}
+
+.n14a
+{
+    color: #fecc47;
+    font-size: 22px;
+}
+
+.n14b
+{
+    color: #3f4249;
+    font-size: 22px;
+}
+
+.box92
+{
+        padding-top: 10px;
+}
+
+.abdlrow
+{
+        background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.percent50
+{
+    color: #fecc47;
+}
+
+.pb50p.progress-bar {
+    background-color: #fecc47;
+    line-height: 14px;
+}
+
+
+
+.percent20
+{
+    color: #d5426e;
+}
+
+.pb20p.progress-bar {
+    background-color: #d5426e;
+    line-height: 14px;
+}
+
+.active-sd
+{
+    color: #6daa27 !important;
+    border-color: #6daa27 !important;
+}
+
+
+/*** MEDIA QUERIES ***/
+
+@media(min-width:1200px)
+{
+    .ajmath
+{
+    float: right;
+    padding-right: 25px;
+}
+    
+    .abdl-clickm
+{
+        float: left;
+    padding-top: 10px;
+}
+    
+    .asmlrow
+    {
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 991px)
+{
+   .info-box-content {
+    padding: 20px 5px;
+    margin-left: 0px;
+    float: right;
+}
+
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ba9e4a;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.info-box-text {
+    text-transform: uppercase;
+    color: #c0e8df;
+    font-size: 18px;
+    text-align: right;
+}
+    
+    .menus .info-box-content {
+    padding: 20px 5px;
+    margin-left: 0px;
+    float: right;
+}
+
+.menus .info-box-text {
+    text-transform: uppercase;
+    color: #c0e8df;
+    font-size: 20px;
+    text-align: right;
+}
+    
+    .ajmath {
+    padding-left: 25px;
+}
+    
+}
+
+@media only screen and (max-width: 991px) and (min-width: 767px)
+{
+  
+    .menus .info-box-content {
+    padding: 20px 10px;
+    margin-left: 3px;
+    float: right;
+}
+    
+    .mid-row3-icon1 {
+    margin-right: 0px;
+}
+    
+    .mid-row3-icon3 {
+    margin-right: 10px;
+}
+
+.mid-row3-icon4 {
+        margin-right: 35px;
+}
+    
+    .ajmath {
+    padding-left: 25px;
+}
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 767px)
+{
+    
+    .top-search-box {
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    
+    .topheader {
+    background: #f5f6f8;
+    padding: 10px 15px 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+        
+    .nav-sm .info-box-text {
+    text-transform: uppercase;
+    color: #c0e8df;
+    font-size: 8px;
+    text-align: center;
+}   
+    
+    .ajmath {
+    padding-left: 25px;
+}
+    
+    .pb102.progress
+    {
+        margin-top: 50px;
+    }
+    
+    .tafsbox.info-box {
+    display: block;
+        min-height: 320px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+
+         
+    
+}
+
+@media (max-width:768px)
+{
+    .topheader {
+     background: #f5f6f8;
+    padding: 10px 15px 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+    
+    .ajmath {
+    padding-left: 25px;
+}
+    
+}
+
+@media(min-width:576px)
+{
+    .mobile-nav-btn
+    {
+        display: none;
+    }
+    
+}
+
+@media (max-width:480px)
+{
+    
+    .homepage {
+    background-image: url(../images/forestbridge.jpg);
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*        margin-top: -200px;*/
+}
+    
+    .nav-md .navbar-nav .open .dropdown-menu.search-down {
+    width: calc(100vw - 0px);
+    height: 300px;
+}
+    .nav-sm .navbar-nav .open .dropdown-menu.search-down {
+    width: calc(100vw - 70px);
+    height: 300px;
+}
+    
+    .info-box-content {
+    padding: 20px 10px;
+    margin-left: 50px;
+}
+    
+    .nav-sm .info-box-content {
+    padding: 20px 10px;
+    margin-left: 10px;
+}
+    
+    .top_nav .navbar-right {
+    margin: 0;
+     width: auto; 
+     float: none !important; 
+     position: initial; 
+}
+    
+    .nav.navbar-nav > li > a {
+    color: #fbffff!important;
+    font-size: 12px;
+}
+    
+    .top_nav .navbar-right li {
+    display: inline-block;
+    float: left;
+    position: static;
+    margin-right: -17px;
+}
+    
+    .toggle {
+    float: right;
+    margin: 0;
+    padding-top: 16px;
+    width: 60px;
+    background: #26323d;
+    padding-bottom: 13px;
+}
+    
+    .topheader h6 {
+    margin-top: 120px;
+    color: #2b8069;
+}
+    
+    .dropdown_btn {
+    background: #2b8069!important;
+    color: white;
+    width: 100%;
+    margin-right: 0px;
+}
+    
+    .progress.progress_sm {
+    border-radius: 0;
+    margin-bottom: 15px;
+    height: 10px!important;
+}
+    
+    .progress_btn1 {
+    background: #2b8069!important;
+    color: white;
+        width: 100%;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+    
+    .top-search-box {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+    .logo {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}        
+    
+    #date {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+}
+    
+    .nav-sm #date {
+    float: right;
+    margin-right: -22px;
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+}
+    .menus .info-box-content {
+    padding: 15px 1px;
+    float: left;
+}
+
+.menus .info-box-text {
+    text-transform: uppercase;
+    color: #c0e8df;
+    font-size: 14px;
+    text-align: center;
+}
+    
+.menus .info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ba9e4a;
+    text-align: center;
+    margin-left: 30px;
+}
+    
+    .btn-success.reason {
+    background: #ba9e4a;
+    border: 1px solid #2b8069;
+    color: #2c5449;
+    width: 100%;
+}
+    
+    .mid-down-img1
+    {
+        text-align: center;
+    margin-bottom: 10px;
+    }
+    
+     .mid-down-img2
+    {
+        text-align: center;
+    margin-bottom: 10px;
+    }
+    
+     .mid-down-img3
+    {
+        text-align: center;
+    margin-bottom: 10px;
+    }
+    
+    .mobile-down-imgs
+    {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .mid-down-imgs
+    {
+        display: none;
+    }
+    
+    .mid-row3-icon1 {
+    margin-right: 0px;
+}
+    
+    .mid-row3-icon3 {
+    margin-right: 10px;
+}
+    
+    .mid-row3-icon4 {
+        margin-right: 35px;
+}
+    
+    .span20
+{
+    background: #ccae32;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.span250
+{
+    background: #6daa27;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
+.span10
+{
+    background: #707070;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+    
+    .tasjil
+    {
+        margin-top: 10px;
+    }
+    
+    .search-box
+    {
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .bell-img
+    {
+        width: auto !important;
+    }
+    
+    .message-img
+    {
+           margin-left: 0px !important;
+    width: 17px !important;
+    height: 11px !important;
+    }
+    
+    .pc-nav-btn
+    {
+        display: none;
+    }
+    
+    .mobile-nav-btn
+    {
+        width: 100%;
+    }
+    
+    .alkul .nav-tabs>li>a {
+    margin-left: auto;
+    margin-right: -2px;
+    border-radius: 4px 4px 0 0;
+    font-size: 12px;
+}
+    
+    .ajmath {
+    padding-left: 25px;
+}
+    
+    .tasm
+    {
+        display: flex;
+    margin-right: 50px;
+    }
+    
+    
+    .abdlc
+    {
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1360px) and (min-width: 1200px)
+{
+    .info-box-content {
+    padding: 20px 0px;
+    margin-left: 10px;
+}
+
+.info-box-text {
+        text-transform: uppercase;
+    color: #c0e8df;
+    font-size: 18px;
+    text-align: center;
+}
+   
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 576px)
+{
+      .mid-user-img
+    {
+        width: auto;
+    }
+    
+    .mid-user-center
+    {
+        text-align: center;
+    }
+    
+    .mid-row3-icon1-center
+    {
+        text-align: center;
+    }
+    
+    .mid-row3-icon2-center
+    {
+        text-align: center;
+    }
+    
+    .mid-row3-icon3-left
+    {
+        text-align: left;
+    }
+    
+    .mid-row3-icon4-left
+    {
+        text-align: left;
+    }
+}
+
+@media(min-width: 768px)
+{
+        .nt2
+    {
+       margin-right: 50px; 
+    }
+    
+    .nt3
+    {
+        margin-right: 50px; 
+    }
+    
+    .nt4
+    {
+        margin-right: 50px; 
+    }
+    
+    .span20
+    {
+            margin-right: 20px;
+    }
+    
+    .span250
+    {
+            margin-right: 20px;
+    }
+    
+    .span10
+    {
+            margin-right: 20px;
+    }
+    
+    .tasjil
+    {
+        margin-right: 20px;
+    }
+}
+
+@media(min-width: 1200px)
+{
+    .lineimg
+{
+        margin-right: -20px;
+}
+    
+    .abd-box
+{
+        display: flex;
+}
+    
+    .b2500a
+{
+    padding-right: 15px;
+}
+    
+
+    
+}
+
+@media(max-width:1200px)
+{
+    
+    .info-box.mid3 {
+    display: block;
+    min-height: 245px;
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #eceef1;
+}
+    
+    .info-box
+    {
+        margin-bottom: 45px;
+    }
+    
+    .mid-row3-icon1 img
+    {
+        padding-top: 25px;
+    }
+    
+      .mid-row3-icon2 img
+    {
+        padding-top: 25px;
+    }
+    
+      .mid-row3-icon3 img
+    {
+        padding-top: 25px;
+    }
+    
+      .mid-row3-icon4 img
+    {
+        padding-top: 25px;
+    }
+    
+        .abd-box
+{
+        text-align: center;
+}
+    
+    .abdlrow {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+         margin-left: 0px;
+    margin-right: 0px;
+}
+    
+     .ttc
+    {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+    .asmlrow
+    {
+        text-align: center;
+    margin-bottom: 10px;
+    }
+    
+    .n1 {
+    background-color: #dfdfdf;
+    height: 100%;
+    border-radius: 0px;
+    font-size: 10px;
+    width: 15px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    
+    .hilqm
+    {
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+    
+    .b2500a {
+    text-align: center;
+    margin-bottom: 20px;
+}
+    
+    .tafsim {
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+    
+}
+/****************************************************************************************/
+/*   Model ******************************************************************************/
+.modal-header {
+    padding: 15px;
+    border-bottom: none;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: none;
+}
+
+.modal-header .close {
+    margin-top: -25px;
+    background: #f7582d;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    opacity: 1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow:0 2px 3px rgba(0,0,0,0.1);
+    box-shadow:0 2px 3px rgba(0,0,0,0.1);
+}
+.modal-backdrop{
+    /**/
+}
+.modal-title{
+    text-align: center;
+    padding: 10px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #8191a5;
+}
+
+.model .form-group {
+    margin-bottom: 30px;
+}
+.nav-justify-header{
+    display: flex;
+    justify-content: center;
+}
+.nav-justify-header li{
+    flex: 1;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.btn3 .fa-check
+{
+    margin-left: 5px;
+}
+
+.label2
+{
+    margin-right: 10px;
+}
+
+.btn1.btn-primary {
+    color: #6daa27;
+    background-color: #fff;
+    border-color: #6daa27;
+    height: 45px;
+    width: 100%;
+}
+
+.btn1.btn-primary:hover {
+  color: #6daa27;
+    background-color: #fff;
+    border-color: #6daa27;
+}
+
+.btn1a.btn-primary {
+    color: #6daa27;
+    background-color: #fff;
+    border-color: #6daa27;
+    height: 45px;
+    width: 100%;
+}
+
+.btn1a.btn-primary:hover {
+  color: #6daa27;
+    background-color: #fff;
+    border-color: #6daa27;
+}
+
+.btn1a .fa-check {
+    color: #fff;
+    font-weight: normal;
+    background: #6daa27;
+    border-radius: 0px;
+    width: 16px;
+    font-size: 10px;
+    height: 15px;
+    padding-top: 2px;
+        margin-left: 10px;
+}
+
+.btn2.btn-primary {
+    color: #8191a5;
+    background-color: #f2f4f6;
+    border-color: #f2f4f6;
+    height: 45px;
+    width: 100%;
+}
+
+.btn2.btn-primary:hover {
+    color: #8191a5;
+    background-color: #f2f4f6;
+    border-color: #f2f4f6;
+}
+
+.btn3.btn-primary {
+    color: #fff;
+    background-color: #6daa27;
+    border-color: #6daa27;
+    padding: 13px 25px;
+}
+
+.btn3.btn-primary:hover,
+.btn3.btn-primary:focus,
+.btn3.btn-primary:active {
+   color: #fff;
+    background-color: #6daa27;
+    border-color: #6daa27;
+}
+.btn4.btn-primary {
+    color: #8191a5;
+    background-color: #f2f4f6;
+    border-color: #f2f4f6;
+    padding: 13px 25px;
+}
+
+.btn4.btn-primary:hover,
+.btn4.btn-primary:focus,
+.btn4.btn-primary:active {
+    color: #8191a5;
+    background-color: #f2f4f6;
+    border-color: #f2f4f6;
+}
+.btnspb
+{
+        margin-right: -15px;
+}
+
+.my-btn {
+position: relative;
+display: inline-block;
+}
+
+.my-btn .fa-check {
+position: absolute;
+    top: -5px;
+    right: 10px;
+    color: #fff;
+    font-weight: normal;
+    background: #6daa27;
+    border-radius: 6px;
+    width: 16px;
+    font-size: 10px;
+    height: 15px;
+    padding-top: 2px;
+}
+
+.my-btn3 {
+position: relative;
+display: inline-block;
+}
+
+.my-btn3 .fa-check {
+position: absolute;
+    top: 12px;
+    right: 10px;
+    color: #fff;
+    font-weight: normal;
+    background: #6daa27;
+    border-radius: 6px;
+    width: 16px;
+    font-size: 10px;
+    height: 15px;
+    padding-top: 2px;
+}
+
+hr.new1 {
+  border-top: 1px solid #8191a5;
+  width: 100%;
+}
+
+.fa-cogs
+{
+    margin-left: 5px;
+}
+
+.user
+{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.nav-tabs {
+    border-bottom: 1px solid #cccccc40;
+    background: #fcfcfc;
+    margin-bottom: 30px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #6daa27;
+    cursor: default;
+    border-bottom: 2px solid #6daa27;
+    border-left: 1px solid #cad0d7;
+    background-color: #fcfcfc;
+    border-top: none;
+    border-right: none;
+}
+
+.nav-tabs>li>a {
+    text-align: center;
+    margin-right: 5px;
+    color: #8191a5;
+    border-left: 1px solid #cccccc40;
+}
+
+.fa-plus
+{
+    font-size: 20px;
+    color: #9094a5;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.zero0
+{
+    font-size: 30px;
+    color: #6daa27;
+}
+
+.fa-minus
+{
+    font-size: 20px;
+    color: #9094a5;
+    margin-right: 15px;
+}
+
+.selectoption
+{
+    color: #8191a8;
+}
+
+.yavmul
+{
+        border: 1px solid #8d91a5;
+}
+
+.yavmul h5
+{
+    color: #8d91a5;
+}
+
+.yavmul img
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.yavmul2
+{
+        border: 1px solid #8d91a5;
+    background: #f9fbfa;
+}
+
+.yavmul2 h5
+{
+    color: #8d91a5;
+}
+
+.yavmul2 img
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.lastin img
+{
+    width: 25px;
+}
+
+.lastin span
+{
+    padding-right: 30px;
+    color: #6daa28;
+    font-size: 20px;
+}
+
+.lastin h5
+{
+    color: #8d91a5;
+}
+
+.footerbtn4
+{
+    margin-bottom: 30px;
+}
+
+
+
+.s2502
+{
+    font-size: 20px;
+    color: #6daa28;
+}
+
+.s52
+{
+    font-size: 20px;
+    color: #ddd1a7;
+}
+
+.s20a
+{
+    font-size: 20px;
+    color: #e69858;
+}
+
+.s20b
+{
+    font-size: 20px;
+    color: #e5547f;
+}
+
+.btn24.btn-primary {
+       color: #8d91a5;
+    background-color: #fff;
+    border-color: #fff;
+    width: 50%;
+    margin-top: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.btn16.btn-primary {
+ color: #fff;
+    background-color: #fe5723;
+    border-color: #fe5723;
+    margin-top: 35px;
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 25px;
+    text-align: right;
+}
+
+.btn16 img
+{
+    width: 25px;
+    margin-right: -15px;
+}
+
+.btn17.btn-primary {
+     color: #fff;
+    background-color: #c0c0c0;
+    border-color: #c0c0c0;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 25px;
+    text-align: left;
+}
+
+.btn17 img
+{
+        width: 25px;
+    margin-left: -35px;
+}
+
+.closed-icon
+{
+    float: left;
+    padding-right: 25px;
+    color: #c0c0c0;
+}
+
+.ellipse-btn
+{
+    text-align: center;
+}
+
+    .secondr
+{
+    background-color: #f3f4f6;
+/*    height: 100px;*/
+    }
+
+@media(min-width: 1200px)
+{
+    .btnspb
+    {
+        padding-bottom: 40px;
+    }
+
+    .btn3.btn-primary
+    {
+        /*margin-top: 15px;*/
+    }
+
+    .selectoption
+    {
+        margin-bottom: 15px;
+    }
+
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+    {
+        /*padding-left: 40px;*/
+    }
+    .nav-tabs>li>a
+    {
+        padding-left: 40px;
+    }
+
+    .yavmul-mr
+    {
+        margin-right: -30px;
+    }
+
+    .secondr
+    {
+            margin-top: 225px;
+    background-color: #f3f4f6;
+/*    height: 100px;*/
+    }
+
+    .alhasr
+{
+        float: right;
+    margin-left: 10px;
+}
+
+    .yavmul .fa-chevron-right
+{
+    padding-right: 200px;
+}
+
+    .yavmul2 .fa-chevron-right
+{
+    padding-right: 75px;
+}
+}
+
+@media(max-width: 1200px)
+{
+    .my-btn
+    {
+        width: 100%;
+}
+
+        .my-btn3
+    {
+        width: 100%;
+}
+
+    .btn1.btn-primary {
+    color: #6daa27;
+    background-color: #fff;
+    border-color: #6daa27;
+    height: 45px;
+    width: 100%;
+        margin-bottom: 10px;
+}
+
+        .btn1a.btn-primary {
+    color: #6daa27;
+    background-color: #fff;
+    border-color: #6daa27;
+    height: 45px;
+    width: 100%;
+        margin-bottom: 10px;
+}
+
+.btn2.btn-primary {
+    color: #8191a5;
+    background-color: #f2f4f6;
+    border-color: #f2f4f6;
+    height: 45px;
+     width: 100%;
+    margin-bottom: 10px;
+}
+
+    .btn3.btn-primary {
+    color: #fff;
+    background-color: #6daa27;
+    border-color: #6daa27;
+    width: 100%;
+}
+
+    .mansure
+    {
+        margin-top: 20px;
+    }
+
+    .hasr
+    {
+            text-align: center;
+    margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 767px)
+{
+.closed-icon {
+    float: left;
+    padding-right: 65px;
+    color: #c0c0c0;
+}
+}
+/* checkbox */
+.checkbox-default label{
+    position: relative;
+    padding:0px 3px;
+    border: 1px solid #ccd2da;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 10px;
+}
+.checkbox-default.checkbox-style-2 label{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 1px solid #ebebeb;
+}
+.checkbox-default input[type=checkbox]{
+    display: none;
+}
+.checkbox-default label:after{
+    content: "\f00c";
+    font-family: FontAwesome;
+    opacity: 0;
+}
+.checkbox-default input[type=checkbox]:checked + label{
+    border: 1px solid #6daa27;
+}
+
+.checkbox-default input[type=checkbox]:checked + label:after{
+    content: "\f00c";
+    font-family: FontAwesome;
+    color:#6daa27;
+    opacity: 1;
+}
+
+.checkbox div{
+    position: relative;
+    padding:15px 25px;
+    color: #8191a5;
+    background: #f2f4f6;
+    border: 1px solid #f2f4f6;
+    border-radius: 2px;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+}
+.checkbox input[type=checkbox]{
+    display: none;
+}
+.checkbox label{
+    padding: 0;
+    display: block;
+}
+
+.checkbox label input[type=checkbox]:checked + div{
+    position: relative;
+    padding:15px 25px;
+    color: #6daa27;
+    background: #fff;
+    border: 1px solid #6daa27;
+    border-radius: 2px;
+}
+
+.checkbox label input[type=checkbox]:checked + div:after{
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    background: #6daa27;
+    color: #fff;
+    border-radius:1px;
+    padding: 0px 3px;
+}
+/* Radio */
+.radio div{
+    position: relative;
+    padding:15px 25px;
+    color: #8191a5;
+    background: #f2f4f6;
+    border: 1px solid #f2f4f6;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+}
+.radio input[type=radio]{
+    display: none;
+}
+.radio label{
+    padding: 0;
+    display: block;
+}
+
+.radio label input[type=radio]:checked + div{
+    position: relative;
+    padding:15px 25px;
+    color: #6daa27;
+    background: #fff;
+    border: 1px solid #6daa27;
+    border-radius: 2px;
+}
+
+.radio label input[type=radio]:checked + div:after{
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background: #6daa27;
+    color: #fff;
+    border-radius: 100%;
+    padding: 0px 3px;
+}
+.checkbox, .radio{
+    margin-top:0;
+}
+.input-custom-group{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.input-custom-group > div{
+    flex: auto;
+    margin: 3px;
+}
+
+/* form-control */
+.form-control{
+    padding:13px 25px;
+    height: auto;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#plusMin,#minusMin,#plusMax,#minusMax{
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+
+.modal-content .row{
+    margin-bottom: 30px;
+}
+
+/*   End model **************************************************************************/
+
+/*   Nav Tabs  **************************************************************************/
+.nav-tabs{
+    border-bottom: 2px solid #cccccc40;
+}
+.nav-tabs > li{
+    background: none;
+    aborder-bottom: 2px solid transparent;
+}
+.nav-tabs > li > a{
+    border-radius: 0;
+    position: relative;
+    padding: 30px 15px;
+    border-left:none;
+}
+.nav-tabs > li > a:after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 27px;
+    border-left: 1px solid #cad0d7;
+    height: 33px;
+}
+.nav-tabs > li:last-child > a:after{
+    border-left: 0px solid #cad0d7;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    -webkit-box-shadow:0 2px 0 #6daa27;
+    box-shadow:0 2px 0 #6daa27;
+    border-left:none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+}
+.top_nav .nav > li > a:hover{
+    background: transparent;
+    border-color: transparent;
+    color:#6daa27;
+    -webkit-box-shadow:0 2px 0 #6daa27;
+    box-shadow:0 2px 0 #6daa27;
+}
+.nav-justify-header{
+    
+}
+
+/*   End Nav Tabs ***********************************************************************/
+
+/*   Colors & font **********************************************************************/
+.color-light{
+    color:#bfc7d1;
+}
+.font-30{
+    font-size: 30px;
+}
+.card-student .font-small{
+    font-size: 10px;
+}
+.card-student .t2{
+    white-space: nowrap;
+}
+
+/*   End Colors & font ******************************************************************/
+
+/*    progress-bar **********************************************************************/
+.card-student .progress-bar-thin{
+    height: 5px;
+    margin-top: 12px;
+}
+
+/*    End progress-bar ******************************************************************/
+
+/*    Card student **********************************************************************/
+.card-student:hover,
+.card-student:active,
+.card-student:focus,
+.card-student.active{
+    border:1px solid #6daa27;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    /*cursor: pointer;*/
+}
+.card-student.boxs .student-name,
+.card-student.boxs2 .student-name{
+    color:#7387b0;
+}
+.boxs2 .checkbox-default input[type=checkbox]:checked + label{
+    border: 1px solid #8191a5;
+}
+
+.boxs2 .checkbox-default input[type=checkbox]:checked + label:after{
+    color:#8191a5;
+}
+.boxs .checkbox-default input[type=checkbox]:checked + label{
+    border: 1px solid #ccae32;
+}
+
+.boxs .checkbox-default input[type=checkbox]:checked + label:after{
+    color:#ccae32;
+}
+.card-student .student-name{
+    color:#6daa27;
+}
+
+.card-student .dropdown-menu{
+    box-shadow:0 2px 5px rgba(0,0,0,0.3);
+    border:none;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding: 10px;
+    right: -90%;
+}
+.card-student .dropdown-menu:after{
+    position: absolute;
+    top: -8px;
+    left: 15%;
+    content: " ";
+    padding: 8px;
+    transform: rotate(-45deg);
+    -webkit-box-shadow: 2px -2px 2px -2px rgba(0,0,0,0.2);
+    box-shadow: 2px -2px 2px -2px rgba(0,0,0,0.2);
+    background: #fff;
+}
+.card-student .dropdown-menu > li > a{
+    padding:10px 5px;
+    color:#73879c;
+}
+.card-student .dropdown-menu > li > a{
+    border-bottom:1px solid #e8e8e8;
+}
+.card-student .dropdown-menu > li:last-child > a{
+    border-bottom:0;
+}
+.card-student .dropdown-menu > li > a > .color-red{
+    color:#fe5d5d;
+}
+.card-student.boxs2:hover ,
+.card-student.boxs2:focus ,
+.card-student.boxs2:active {
+    border: 1px solid #707070 !important;
+}
+.card-student.boxs2:hover,
+.card-student.boxs2:active,
+.card-student.boxs2:focus,
+.card-student.boxs2.active{
+    border:1px solid #707070;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    /*cursor: pointer;*/
+}
+.card-student.boxs:hover ,
+.card-student.boxs:focus ,
+.card-student.boxs:active {
+    border: 1px solid #ccae32 !important;
+}
+.card-student.boxs:hover,
+.card-student.boxs:active,
+.card-student.boxs:focus,
+.card-student.boxs.active{
+    border:1px solid #ccae32;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    /*cursor: pointer;*/
+}
+.nav-tabs{
+    background: #f7f8fa;
+    margin-bottom: 0;
+}
+.nav-tabs.nav-justified.nav-tabs-custom > li > a{
+    border:none;
+}
+.nav-tabs.nav-tabs-custom > li.active > a:after ,
+.nav-tabs.nav-tabs-custom > li.active > a:after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 27px;
+    border-left: 0px solid #cad0d7;
+    height: 33px;
+}
+.nav-tabs.nav-tabs-custom > li.active > a, .nav-tabs.nav-tabs-custom > li.active > a:focus, .nav-tabs.nav-tabs-custom > li.active > a:hover{
+    -webkit-box-shadow: 0 2px 0 #fff,0 -1px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 0 #fff,0 -1px 20px rgba(0,0,0,0.05);
+}
+
+.nav-tabs-custom > li.active > a, .nav-tabs-custom > li.active > a:focus, .nav-tabs-custom > li.active > a:hover{
+    background: #fff;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    border:none;
+}
+.nav-tabs.nav-justified.nav-tabs-custom > .active > a, .nav-tabs.nav-justified.nav-tabs-custom > .active > a:focus, .nav-tabs.nav-justified.nav-tabs-custom > .active > a:hover{
+    border:none;
+}
+
+/*    End Card student ******************************************************************/
+/*    General ***************************************************************************/
+.ml-2{
+    margin-left: 20px;
+}
+.owl-next,
+.owl-prev{
+    cursor: pointer;
+}
+.color-green{
+    color:#6daa27;
+}
+.color-red{
+    color:#f7582d;
+}
+.color-dark{
+    color: #4E5E6E;
+}
+.color-light{
+    color: #abb1be;
+}
+
+.mid-user-img{
+    border-radius: 100%;
+    /*border: 0px solid #8191a5;*/
+    height: 62px;
+    width: 62px;
+    box-shadow: 0 0 0px 5px #f8f8f8;
+}
+.mid-agancy-img{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0px 5px #f8f8f8;
+}
+.small-font{
+    font-size: 10px;
+}
+.large-font-4{
+    font-size: 15px;
+}
+.large-font-3{
+    font-size: 18px;
+}
+.large-font-2{
+    font-size: 20px;
+}
+.large-font-1{
+    font-size: 25px;
+}
+.p-1{
+    padding: 5px;
+}
+.p-2{
+    padding: 10px;
+}
+.pt-3{
+    padding-top: 15px;
+}
+.pb-3{
+    padding-bottom: 15px;
+}
+.pl-1{
+    padding-left:5px;
+}
+.pr-1{
+    padding-right:5px;
+}
+.border-left{
+    border-left:1px solid #eceef1;
+}
+.d-inline{
+    display: inline-block;
+}
+.d-block{
+    display: block;
+}
+/*    End General ***********************************************************************/
+/*    Catogery **************************************************************************/
+.category{
+    padding: 20px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.category > div{
+    flex: auto;
+    margin:5px;
+}
+
+.category .item label{
+    display: block;
+}
+
+.category .item:first-child label > div{
+    background: #f5f6f8;
+}
+
+.category .item label > div{
+    background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    border:1px solid #eceef1;
+}
+
+.category .item .check{
+    border-radius: 100%;
+    border:1px solid #ccd2da;
+    padding: 1px 3px;
+    margin-left: 5px;
+}
+.category .item .check i{
+    color: #ccd2da;
+}
+
+.category .item .title{
+    font-weight: bold;
+    font-size: 15px;
+}
+.category .item span:not(.title){
+    color:#6daa27;
+}
+.category input[type=checkbox]{
+    display: none;
+}
+
+.category input[type=checkbox]:checked + label > div{
+    background:#fff;
+    border:1px solid #6daa27;
+    -webkit-box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+}
+.category input[type=checkbox]:checked + label .check{
+    border:1px solid #6daa27;
+    box-shadow: 0 2px 10px rgba(109, 170, 39, 0.5);
+}
+.category input[type=checkbox]:checked + label .check i{
+    color:#6daa27;
+}
+.btn5.btn-primary {
+    color: #c1c1c1;
+    background-color: #ffffff;
+    border-color: #fff;
+    padding: 1px 5px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.btn5.btn-primary:hover,
+.btn5.btn-primary:focus,
+.btn5.btn-primary:active {
+    color: #fff;
+    background-color: #6daa27;
+    border-color: #6daa27;
+}
+.btn5.btn-primary:hover span,
+.btn5.btn-primary:focus span,
+.btn5.btn-primary:active span{
+    color:#ffffff;
+}
+
+/*    End Catogery **********************************************************************/
+/*    Episode ***************************************************************************/
+.owl-carousel-episode .item label{
+    display: block;
+}
+.owl-carousel-episode .item input[type=radio]{
+    display: none;
+}
+.owl-carousel-episode .item input[type=radio]:checked + label .info-box{
+    border:1px solid #6daa27;
+    -webkit-box-shadow: 0 3px rgba(109, 170, 39, 0.7);
+    box-shadow: 0 3px 40px rgba(109, 170, 39, 0.7);
+}
+
+/*    End Episode ***********************************************************************/
+/*    Side Menu *************************************************************************/
+.nav.side-menu > li > ul{
+    list-style: none;
+    background: #161C23;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.nav.side-menu > li.active ul{
+    display: block;
+}
+
+.nav.side-menu > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    border-right: 5px solid #3D5061;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.nav.side-menu > li > ul > li > a:hover,
+.nav.side-menu > li > ul > li > a:focus,
+.nav.side-menu > li > ul > li > a:active{
+    border-right: 5px solid #f4d346;
+    color: #f4d346;
+    padding-right: 20px;
+}
+.nav.side-menu > li > ul > li.active > a{
+    border-right: 5px solid #f4d346;
+    color: #f4d346;
+}
+.nav.side-menu > li > ul > li > a i{
+    font-size:10px;
+    padding: 0;
+    margin: 0;
+}
+
+/*    End Side Menu *********************************************************************/
+/*    Add Permission ********************************************************************/
+.permission{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: nowrap;
+}
+.permission > div{
+    display: inline-block;
+    border: 1px solid #dedede;
+    border-radius:0 4px 4px 0;
+    padding: 13px 25px;
+    margin-left: -4px;
+    color: #a7b2c0;
+}
+
+.permission > div > input{
+    border: 0;
+    display: inline-block;
+    background: transparent;
+    color: #a7b2c0;
+}
+.permission > div.to{
+    background:#f9fafb;
+    border-radius:4px 0 0 4px;
+}
+.permission > div  .fa{
+    margin: 0;
+    padding: 0;
+    color: #a7b2c0;
+}
+.permission-statictices{
+    background:#fdfdfd;
+    padding: 10px 0 0 0;
+    color:#bbc9d5;
+}
+.permission-footer{
+    background:#f2f4f6;
+    padding: 10px;
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.1) inset;
+}
+
+
+.permission-content.modal-content .row{
+    margin-bottom: 0;
+}
+
+.permission-content .day{
+    font-size: 14px;
+    color: #bbc9d5;
+    font-weight: bold;
+}
+.permission-content .day-number{
+    font-size: 29px;
+    color: #99c367;
+}
+.permission-statictices .present{
+    color:#65953f;
+}
+.permission-statictices .dely{
+    color:#f2c786;
+}
+.permission-statictices .excused-absence{
+    color:#ec9a53;
+}
+.permission-statictices .absence{
+    color:#ec5379;
+}
+.permission-statictices > div > div > div{
+    display: table;
+}
+.permission-statictices > div > div > div > div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.permission-statictices > div > div > div h1{
+    margin: 0;
+}
+.permission-content .perest-day{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.permission-content .perest-day > div{
+    background: #ffffff;
+    border:1px solid #e5e8ec;
+    border-radius: 2px;
+    flex: 1;
+    display: block;
+    padding: 10px;
+    position: relative;
+    margin: 5px;
+}
+.permission-content .perest-day .table{
+    display: table;
+    margin: 0 5px 0 5px;
+}
+.permission-content .perest-day .table > div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.permission-content .perest-day .day{
+    font-size: 25px;
+    color:#99c367;
+}
+.permission-content .perest-day .month{
+    font-size: 10px;
+}
+.permission-content .perest-day .excused-absence,
+.permission-content .perest-day .absent{
+    position: relative;
+    padding: 2px 30px;
+    background: #f7582d;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 0 10px;
+}
+.permission-content .perest-day .excused-absence{
+    background:#c1c1c1;
+}
+
+.permission-content .perest-day .absent:after{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    content: " ";
+    background: #fff;
+    padding: 7px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+.permission-content .perest-day .absent.excused-absence:after{
+    left:10px;
+    right:auto;
+}
+
+.permission-content .perest-day .close{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+/*  End Add Permission ******************************************************************/
+/*  Card Program ************************************************************************/
+.table-div{
+    display: table;
+}
+.table-div > div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.info-box.mid3.card-program{
+    min-height:185px;
+}
+.info-box.mid3.card-program{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.progam-levels{
+    background: #fff;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    padding: 10px;
+}
+.progam-levels .level{
+    padding: 10px;
+    background:#f3f4f6;
+    border:1px solid #f3f4f6;
+    position: relative;
+}
+.progam-levels .level > .row > div{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.progam-levels .level .number{
+    background: #ffffff;
+    padding: 1px 5px;
+}
+.progam-levels .level .option{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    background: #fff;
+}
+.progam-levels .level:hover .option{
+    display: block;
+}
+
+/*  End Card Program ********************************************************************/
+/*   box-style-1 ************************************************************************/
+.box-style-1{
+    background:#f3f4f6;
+    margin-bottom: 10px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    height: 100%;
+    border:1px solid #eceef1;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.box-style-1 > div{
+    height: 100%;
+}
+
+.progam-levels .move{
+    width: 30px;
+    height: 100%;
+    background:#eee url(../images/move/nb-dots2.png);
+    cursor: move;
+}
+.progam-levels .number{
+    background: #fff;
+    padding: 0 5px 0 5px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.box-style-1 > div:nth-child(2){
+    flex: 1;
+}
+
+.box-style-1:hover{
+    border:1px solid #6daa27;
+}
+.box-style-1:hover .move{
+    background:#6daa27 url(../images/move/nb-dots2.png);
+}
+.box-style-1:hover .number{
+    background: #6daa27;
+    color: #fff;
+}
+
+/*  End box-style-1 *********************************************************************/
+/*  Nice Alert **************************************************************************/
+.nice-alert{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    background:#6daa27;
+    color: #fff;
+    box-shadow: 0 0 100px #6daa27;
+    z-index: 999;
+    padding:30px 60px;
+    border-radius: 2px;
+    animation-name: nice-alert, nice-alert-fade;
+    animation-timing-function: linear,linear;
+    animation-duration: 0.4s, 1s;
+    animation-delay: 0s,2s;
+
+}
+@keyframes nice-alert{
+    0%{left: 0px;}
+    10%{left: 70px;}
+    20%{left: 20px;}
+    30%{left: 60px;}
+    40%{left: 20px;}
+    50%{left: 50px;}
+    60%{left: 20px;}
+    70%{left: 40px;}
+    80%{left: 20px;}
+    90%{left: 30px;}
+    100%{left: 20px;}
+}
+@keyframes nice-alert-fade{
+    0%{opacity: 1;}
+    25%{opacity: 0.75;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.25;}
+    100%{opacity: 0;}
+
+}
+/*  End Nice ALert **********************************************************************/
+
+
+--></style>
+</head>
+<body>
+<a name="0"></a><@font-face style="position: static;">@font-face</@font-face><br style="clear: both">
+<a name="1"></a><@font-face style="position: static;">@font-face</@font-face><br style="clear: both">
+<a name="2"></a><br style="clear: both">
+<a name="3"></a><div style="position: static;">*</div>
+<br style="clear: both">
+<a name="4"></a><div style="position: static;" class="toggle">.toggle</div>
+<br style="clear: both">
+<a name="5"></a><div style="position: static;" class="toggle"><div style="position: static;">.toggle a</div>
+</div><br style="clear: both">
+<a name="6"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="navbar-right">.top_nav .navbar-right</div>
+</div><br style="clear: both">
+<a name="7"></a><div style="position: static;" class="lang-chooser">.lang-chooser</div>
+<br style="clear: both">
+<a name="8"></a><div style="position: static;" class="fa-chevron-right">.fa-chevron-right</div>
+<br style="clear: both">
+<a name="9"></a><div style="position: static;" class="fa-chevron-left">.fa-chevron-left</div>
+<br style="clear: both">
+<a name="10"></a><div style="position: static;" class="logo">.logo</div>
+<br style="clear: both">
+<a name="11"></a><div style="position: static;" id="date">#date</div>
+<br style="clear: both">
+<a name="12"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><div style="position: static;">.nav.side-menu > li > a</div>
+</li></div><br style="clear: both">
+<a name="13"></a><div style="position: static;" class="nav child_menu"><li style="position: static;"><div style="position: static;">.nav.child_menu > li > a</div>
+</li></div><br style="clear: both">
+<a name="14"></a><div style="position: static;" class="nav"><ul><li style="position: static;" class="current-page">.nav li.current-page</li></ul></div><br style="clear: both">
+<a name="15"></a><div style="position: static;" class="nav side-menu"><ul><li style="position: static;" class="current-page">.nav.side-menu > li.current-page</li></ul></div><br style="clear: both">
+<a name="16"></a><div style="position: static;" class="nav side-menu"><li style="position: static;" class="current-page"><div style="position: static;">.nav.side-menu > li.current-page a</div>
+</li></div><br style="clear: both">
+<a name="17"></a><div style="position: static;" class="bad"><input value=".bad input" style="position: static;"></div><br style="clear: both">
+<a name="18"></a><textarea style="position: static;" class="form-control">textarea.form-control</textarea><br style="clear: both">
+<a name="19"></a><div style="position: static;" class="item"><input value=".item input" style="position: static;"></div><br style="clear: both">
+<a name="20"></a><div style="position: static;" class="item"><div style="position: static;" class="alert">.item .alert</div>
+</div><br style="clear: both">
+<a name="21"></a><div style="position: static;" class="login_content"><form style="position: static;"><input value=".login_content form input[type="text"]" style="position: static;"></form></div><br style="clear: both">
+<a name="22"></a><div style="position: static;" class="login_content"><form style="position: static;"><input value=".login_content form input[type="password"]" style="position: static;"></form></div><br style="clear: both">
+<a name="23"></a><div style="position: static;" class="login_content"><div style="position: static;"><div style="position: static;" class="reset_pass">.login_content div .reset_pass</div>
+</div></div><br style="clear: both">
+<a name="24"></a><div style="position: static;" class="info-box">.info-box</div>
+<br style="clear: both">
+<a name="25"></a><div style="position: static;" class="owl-carousel"><div style="position: static;" class="owl-item"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .owl-carousel .owl-item img</div></div><br style="clear: both">
+<a name="26"></a><div style="position: static;" class="owl-carousel"><div style="position: static;" class="owl-item">.owl-carousel .owl-item</div>
+</div><br style="clear: both">
+<a name="27"></a><div style="position: static;" class="mid-logo-icon">.mid-logo-icon</div>
+<br style="clear: both">
+<a name="28"></a><div style="position: static;" class="mid-left"><h6 style="position: static;">.mid-left h6</h6></div><br style="clear: both">
+<a name="29"></a><div style="position: static;" class="mid-left"><span style="position: static;">.mid-left span</span></div><br style="clear: both">
+<a name="30"></a><div style="position: static;" class="mobile-mid-down-img1-right">.mobile-mid-down-img1-right</div>
+<br style="clear: both">
+<a name="31"></a><div style="position: static;" class="mobile-mid-down-img2-center">.mobile-mid-down-img2-center</div>
+<br style="clear: both">
+<a name="32"></a><div style="position: static;" class="mobile-mid-down-img3-left">.mobile-mid-down-img3-left</div>
+<br style="clear: both">
+<a name="33"></a><div style="position: static;" class="mid-text1">.mid-text1</div>
+<br style="clear: both">
+<a name="34"></a><div style="position: static;" class="percentages">.percentages</div>
+<br style="clear: both">
+<a name="35"></a><div style="position: static;" class="mid-down-imgs">.mid-down-imgs</div>
+<br style="clear: both">
+<a name="36"></a><div style="position: static;" class="mid-down-img1">.mid-down-img1</div>
+<br style="clear: both">
+<a name="37"></a><div style="position: static;" class="mid-down-img2">.mid-down-img2</div>
+<br style="clear: both">
+<a name="38"></a><div style="position: static;" class="mid-down-img3">.mid-down-img3</div>
+<br style="clear: both">
+<a name="39"></a><div style="position: static;" class="plustop">.plustop</div>
+<br style="clear: both">
+<a name="40"></a><div style="position: static;" class="plusbtn">.plusbtn</div>
+<br style="clear: both">
+<a name="41"></a><div style="position: static;" class="plusbtn"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .plusbtn img</div><br style="clear: both">
+<a name="42"></a><div style="position: static;" class="plusbtn"><h5 style="position: static;">.plusbtn h5</h5></div><br style="clear: both">
+<a name="43"></a><div style="position: static;" class="bihd">.bihd</div>
+<br style="clear: both">
+<a name="44"></a><div style="position: static;" class="alkul">.alkul</div>
+<br style="clear: both">
+<a name="45"></a><div style="position: static;" class="alkul"><div style="position: static;">.alkul a</div>
+</div><br style="clear: both">
+<a name="46"></a><div style="position: static;" class="alkul"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.alkul a:hover</a></div><br style="clear: both">
+<a name="47"></a><div style="position: static;" class="nav-tabs">.nav-tabs</div>
+<br style="clear: both">
+<a name="48"></a><div style="position: static;" class="nav-tabs"><ul><li style="position: static;">.nav-tabs>li</li></ul></div><br style="clear: both">
+<a name="49"></a><div style="position: static;" class="tasjil btn-primary">.tasjil.btn-primary</div>
+<br style="clear: both">
+<a name="50"></a><div style="position: static;" class="tasjil btn-primary">.tasjil.btn-primary:hover</div>
+<br style="clear: both">
+<a name="51"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><div style="position: static;">.nav-tabs>li.active>a</div>
+</li></div><br style="clear: both">
+<a name="52"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs>li.active>a:focus</a></li></div><br style="clear: both">
+<a name="53"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs>li.active>a:hover</a></li></div><br style="clear: both">
+<a name="54"></a><div style="position: static;" class="tahdid">.tahdid</div>
+<br style="clear: both">
+<a name="55"></a><div style="position: static;" class="abdl">.abdl</div>
+<br style="clear: both">
+<a name="56"></a><div style="position: static;" class="span20">.span20</div>
+<br style="clear: both">
+<a name="57"></a><div style="position: static;" class="span250">.span250</div>
+<br style="clear: both">
+<a name="58"></a><div style="position: static;" class="span10">.span10</div>
+<br style="clear: both">
+<a name="59"></a><div style="position: static;" class="small-user">.small-user</div>
+<br style="clear: both">
+<a name="60"></a><div style="position: static;" class="info-box mid3">.info-box.mid3</div>
+<br style="clear: both">
+<a name="61"></a><div style="position: static;" class="mobile-down-imgs">.mobile-down-imgs</div>
+<br style="clear: both">
+<a name="62"></a><div style="position: static;" class="group4107">.group4107</div>
+<br style="clear: both">
+<a name="63"></a><div style="position: static;" class="group4083">.group4083</div>
+<br style="clear: both">
+<a name="64"></a><div style="position: static;" class="path2165">.path2165</div>
+<br style="clear: both">
+<a name="65"></a><div style="position: static;" class="percent98a">.percent98a</div>
+<br style="clear: both">
+<a name="66"></a><div style="position: static;" class="t2a">.t2a</div>
+<br style="clear: both">
+<a name="67"></a><div style="position: static;" class="boxs">.boxs</div>
+<br style="clear: both">
+<a name="68"></a><div style="position: static;" class="boxs2">.boxs2</div>
+<br style="clear: both">
+<a name="69"></a><div style="position: static;" class="popup-box"><ul style="position: static;"><li>.popup-box ul</li></ul></div><br style="clear: both">
+<a name="70"></a><div style="position: static;" class="borderbox">.borderbox</div>
+<br style="clear: both">
+<a name="71"></a><div style="position: static;" class="popup-box"><div style="position: static;" class="group4061">.popup-box .group4061</div>
+</div><br style="clear: both">
+<a name="72"></a><div style="position: static;" class="deletebox">.deletebox</div>
+<br style="clear: both">
+<a name="73"></a><div style="position: static;" class="fa-bell">.fa-bell</div>
+<br style="clear: both">
+<a name="74"></a><div style="position: static;" class="bell">.bell</div>
+<br style="clear: both">
+<a name="75"></a><div style="position: static;" class="bg-aqua">.bg-aqua</div>
+<br style="clear: both">
+<a name="76"></a><div style="position: static;" class="callout callout-info">.callout.callout-info</div>
+<br style="clear: both">
+<a name="77"></a><div style="position: static;" class="alert-info">.alert-info</div>
+<br style="clear: both">
+<a name="78"></a><div style="position: static;" class="label-info">.label-info</div>
+<br style="clear: both">
+<a name="79"></a><div style="position: static;" class="modal-info"><div style="position: static;" class="modal-body">.modal-info .modal-body</div>
+</div><br style="clear: both">
+<a name="80"></a><div style="position: static;" class="has-search"><div style="position: static;" class="form-control-feedback">.has-search .form-control-feedback</div>
+</div><br style="clear: both">
+<a name="81"></a><div style="position: static;" class="has-search"><div style="position: static;" class="form-control">.has-search .form-control</div>
+</div><br style="clear: both">
+<a name="82"></a><div style="position: static;" class="mid-row1">.mid-row1</div>
+<br style="clear: both">
+<a name="83"></a><div style="position: static;" class="clickm">.clickm</div>
+<br style="clear: both">
+<a name="84"></a><div style="position: static;" class="mid-row2">.mid-row2</div>
+<br style="clear: both">
+<a name="85"></a><div style="position: static;" class="mid-text2">.mid-text2</div>
+<br style="clear: both">
+<a name="86"></a><div style="position: static;" class="percent98">.percent98</div>
+<br style="clear: both">
+<a name="87"></a><div style="position: static;" class="mid-row3-icon1">.mid-row3-icon1</div>
+<br style="clear: both">
+<a name="88"></a><div style="position: static;" class="mid-row3-icon2">.mid-row3-icon2</div>
+<br style="clear: both">
+<a name="89"></a><div style="position: static;" class="mid-row3-icon3">.mid-row3-icon3</div>
+<br style="clear: both">
+<a name="90"></a><div style="position: static;" class="mid-row3-icon4">.mid-row3-icon4</div>
+<br style="clear: both">
+<a name="91"></a><div style="position: static;" class="info-box-content">.info-box-content</div>
+<br style="clear: both">
+<a name="92"></a><div style="position: static;" class="info-box-text">.info-box-text</div>
+<br style="clear: both">
+<a name="93"></a><div style="position: static;" class="info-box-number">.info-box-number</div>
+<br style="clear: both">
+<a name="94"></a><div style="position: static;" class="info-box-icon">.info-box-icon</div>
+<br style="clear: both">
+<a name="95"></a><span style="position: static;"><div style="position: static;">span i</div>
+</span><br style="clear: both">
+<a name="96"></a><div style="position: static;" class="user-notification bg-green">.user-notification.bg-green</div>
+<br style="clear: both">
+<a name="97"></a><div style="position: static;" class="callout callout-success">.callout.callout-success</div>
+<br style="clear: both">
+<a name="98"></a><div style="position: static;" class="alert-success">.alert-success</div>
+<br style="clear: both">
+<a name="99"></a><div style="position: static;" class="label-success">.label-success</div>
+<br style="clear: both">
+<a name="100"></a><div style="position: static;" class="modal-success"><div style="position: static;" class="modal-body">.modal-success .modal-body</div>
+</div><br style="clear: both">
+<a name="101"></a><div style="position: static;" class="bg-yellow">.bg-yellow</div>
+<br style="clear: both">
+<a name="102"></a><div style="position: static;" class="callout callout-warning">.callout.callout-warning</div>
+<br style="clear: both">
+<a name="103"></a><div style="position: static;" class="alert-warning">.alert-warning</div>
+<br style="clear: both">
+<a name="104"></a><div style="position: static;" class="label-warning">.label-warning</div>
+<br style="clear: both">
+<a name="105"></a><div style="position: static;" class="modal-warning"><div style="position: static;" class="modal-body">.modal-warning .modal-body</div>
+</div><br style="clear: both">
+<a name="106"></a><div style="position: static;" class="bg-red">.bg-red</div>
+<br style="clear: both">
+<a name="107"></a><div style="position: static;" class="callout callout-danger">.callout.callout-danger</div>
+<br style="clear: both">
+<a name="108"></a><div style="position: static;" class="alert-danger">.alert-danger</div>
+<br style="clear: both">
+<a name="109"></a><div style="position: static;" class="alert-error">.alert-error</div>
+<br style="clear: both">
+<a name="110"></a><div style="position: static;" class="label-danger">.label-danger</div>
+<br style="clear: both">
+<a name="111"></a><div style="position: static;" class="modal-danger"><div style="position: static;" class="modal-body">.modal-danger .modal-body</div>
+</div><br style="clear: both">
+<a name="112"></a><div style="position: static;" class="user-notification bg-green">.user-notification.bg-green</div>
+<br style="clear: both">
+<a name="113"></a><div style="position: static;" class="sidebar-footer">.sidebar-footer</div>
+<br style="clear: both">
+<a name="114"></a><footer style="position: static;">footer</footer><br style="clear: both">
+<a name="115"></a><div style="position: static;" class="search-down"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .search-down img</div><br style="clear: both">
+<a name="116"></a><div style="position: static;" class="nav-md"><div style="position: static;" class="navbar-nav"><div style="position: static;" class="open"><div style="position: static;" class="dropdown-menu search-down">.nav-md .navbar-nav .open .dropdown-menu.search-down</div>
+</div></div></div><br style="clear: both">
+<a name="117"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="navbar-nav"><div style="position: static;" class="open"><div style="position: static;" class="dropdown-menu search-down">.nav-sm .navbar-nav .open .dropdown-menu.search-down</div>
+</div></div></div><br style="clear: both">
+<a name="118"></a><div style="position: static;" class="form-control">.form-control</div>
+<br style="clear: both">
+<a name="119"></a><div style="position: static;" class="nav side-menu homeicons"><ul><li style="position: static;">.nav.side-menu.homeicons > li</li></ul></div><br style="clear: both">
+<a name="120"></a><div style="position: static;" class="nav side-menu homeicons"><ul><li style="position: static;">.nav.side-menu.homeicons > li:hover</li></ul></div><br style="clear: both">
+<a name="121"></a><div style="position: static;" class="nav side-menu homeicons"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav.side-menu.homeicons > li > a:hover</a></li></div><br style="clear: both">
+<a name="122"></a><div style="position: static;" class="nav side-menu"><li style="position: static;" class="active"><div style="position: static;">.nav.side-menu > li.active > a</div>
+</li></div><br style="clear: both">
+<a name="123"></a><div style="position: static;" class="nav side-menu"><ul><li style="position: static;" class="active">.nav.side-menu > li.active</li></ul></div><br style="clear: both">
+<a name="124"></a><div style="position: static;" class="left_col homepage_left">.left_col.homepage_left</div>
+<br style="clear: both">
+<a name="125"></a><div style="position: static;" class="left_col">.left_col</div>
+<br style="clear: both">
+<a name="126"></a><div style="position: static;" class="nav_title homepagetoplogobg">.nav_title.homepagetoplogobg</div>
+<br style="clear: both">
+<a name="127"></a><div style="position: static;" class="nav side-menu homeicons"><li style="position: static;"><div style="position: static;">.nav.side-menu.homeicons > li > a</div>
+</li></div><br style="clear: both">
+<a name="128"></a><div style="position: static;" class="nav_menu homepagetopmenu">.nav_menu.homepagetopmenu</div>
+<br style="clear: both">
+<a name="129"></a><div style="position: static;" class="nav_menu">.nav_menu</div>
+<br style="clear: both">
+<a name="130"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="nav"><div style="position: static;" class="open"><div style="position: static;">.top_nav .nav .open > a</div>
+</div></div></div><br style="clear: both">
+<a name="131"></a><div style="position: static;" class="top_nav homepagetop"><div style="position: static;" class="navbar-right"><ul><li style="position: static;">.top_nav.homepagetop .navbar-right li</li></ul></div></div><br style="clear: both">
+<a name="132"></a><div style="position: static;" class="nav navbar-nav"><li style="position: static;"><div style="position: static;">.nav.navbar-nav > li > a</div>
+</li></div><br style="clear: both">
+<a name="133"></a><div style="position: static;" class="message"><div style="position: static;">.message a</div>
+</div><br style="clear: both">
+<a name="134"></a><div style="position: static;" class="message"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.message a:hover</a></div><br style="clear: both">
+<a name="135"></a><div style="position: static;" class="navbar-nav"><div style="position: static;" class="open"><div style="position: static;" class="dropdown-menu msg_list">.navbar-nav .open .dropdown-menu.msg_list</div>
+</div></div><br style="clear: both">
+<a name="136"></a><div style="position: static;" class="navbar-nav"><li style="position: static;"><div style="position: static;" class="dropdown-menu">.navbar-nav>li>.dropdown-menu</div>
+</li></div><br style="clear: both">
+<a name="137"></a><a href="http://www.blumentals.net" target="_blank" style="position: static;">a</a><br style="clear: both">
+<a name="138"></a><a href="http://www.blumentals.net" target="_blank" style="position: static;">a:focus</a><br style="clear: both">
+<a name="139"></a><a href="http://www.blumentals.net" target="_blank" style="position: static;">a:hover</a><br style="clear: both">
+<a name="140"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="nav"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.top_nav .nav > li > a:hover</a></li></div></div><br style="clear: both">
+<a name="141"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="nav"><div style="position: static;" class="open"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.top_nav .nav .open > a:hover</a></div></div></div><br style="clear: both">
+<a name="142"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="nav"><div style="position: static;" class="open"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.top_nav .nav .open > a:focus</a></div></div></div><br style="clear: both">
+<a name="143"></a><div style="position: static;" class="nav"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav>li>a:focus</a></li></div><br style="clear: both">
+<a name="144"></a><div style="position: static;" class="nav"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav>li>a:hover</a></li></div><br style="clear: both">
+<a name="145"></a><div style="position: static;" class="toggle homepagetoggle">.toggle.homepagetoggle</div>
+<br style="clear: both">
+<a name="146"></a><div style="position: static;" class="sidebar-footer homepagesidefooter">.sidebar-footer.homepagesidefooter</div>
+<br style="clear: both">
+<a name="147"></a><div style="position: static;" class="nav side-menu homeicons"><li style="position: static;" class="active"><div style="position: static;">.nav.side-menu.homeicons > li.active > a</div>
+</li></div><br style="clear: both">
+<a name="148"></a><div style="position: static;" class="nav-sm"><ul style="position: static;" class="nav child_menu"><li>.nav-sm ul.nav.child_menu</li></ul></div><br style="clear: both">
+<a name="149"></a><body style="position: static;"><div style="position: static;" class="container body"><div style="position: static;" class="right_col">body .container.body .right_col</div>
+</div></body><br style="clear: both">
+<a name="150"></a><div style="position: static;" class="topheader">.topheader</div>
+<br style="clear: both">
+<a name="151"></a><div style="position: static;" class="topheader"><h6 style="position: static;">.topheader h6</h6></div><br style="clear: both">
+<a name="152"></a><div style="position: static;" class="progress-bar">.progress-bar</div>
+<br style="clear: both">
+<a name="153"></a><div style="position: static;" class="bar2 progress-bar">.bar2.progress-bar</div>
+<br style="clear: both">
+<a name="154"></a><div style="position: static;" class="progress">.progress</div>
+<br style="clear: both">
+<a name="155"></a><div style="position: static;" class="progress progress_sm">.progress.progress_sm</div>
+<br style="clear: both">
+<a name="156"></a><div style="position: static;" class="bg-green">.bg-green</div>
+<br style="clear: both">
+<a name="157"></a><p style="position: static;">p</p><br style="clear: both">
+<a name="158"></a><div style="position: static;" class="dropdown_btn">.dropdown_btn</div>
+<br style="clear: both">
+<a name="159"></a><div style="position: static;" class="x_panel">.x_panel</div>
+<br style="clear: both">
+<a name="160"></a><html style="position: static;"><body style="position: static;"><div style="position: static;" class="message-box"><div style="position: static;" class="message-widget"><div style="position: static;">html body .message-box .message-widget a</div>
+</div></div></body></html><br style="clear: both">
+<a name="161"></a><html style="position: static;"><body style="position: static;"><div style="position: static;" class="navbar-dark"><div style="position: static;" class="mailbox"><div style="position: static;" class="message-center"><div style="position: static;">html body .navbar-dark .mailbox .message-center a</div>
+</div></div></div></body></html><br style="clear: both">
+<a name="162"></a><html style="position: static;"><body style="position: static;"><div style="position: static;" class="message-box"><div style="position: static;" class="message-widget"><a style="position: static;"><div style="position: static;" class="user-img">html body .message-box .message-widget a .user-img</div>
+</a></div></div></body></html><br style="clear: both">
+<a name="163"></a><html style="position: static;"><body style="position: static;"><div style="position: static;" class="navbar-dark"><div style="position: static;" class="mailbox"><div style="position: static;" class="message-center"><a style="position: static;"><div style="position: static;" class="user-img">html body .navbar-dark .mailbox .message-center a .user-img</div>
+</a></div></div></div></body></html><br style="clear: both">
+<a name="164"></a><div style="position: static;" class="form-control dashboard-form1">.form-control.dashboard-form1</div>
+<br style="clear: both">
+<a name="165"></a><textarea style="position: static;" class="form-control dashboard-form2">textarea.form-control.dashboard-form2</textarea><br style="clear: both">
+<a name="166"></a><div style="position: static;" class="btn focus">.btn.focus</div>
+<br style="clear: both">
+<a name="167"></a><div style="position: static;" class="btn">.btn:focus</div>
+<br style="clear: both">
+<a name="168"></a><div style="position: static;" class="btn">.btn:hover</div>
+<br style="clear: both">
+<a name="169"></a><div style="position: static;" class="top-search-box">.top-search-box</div>
+<br style="clear: both">
+<a name="170"></a><div style="position: static;" class="search-box">.search-box</div>
+<br style="clear: both">
+<a name="171"></a><div style="position: static;" class="topheader"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .topheader img</div><br style="clear: both">
+<a name="172"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="c100">.nav-sm .c100</div>
+</div><br style="clear: both">
+<a name="173"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="logo">.nav-sm .logo</div>
+</div><br style="clear: both">
+<a name="174"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="nav side-menu"><ul><li style="position: static;" class="active-sm">.nav-sm .nav.side-menu li.active-sm</li></ul></div></div><br style="clear: both">
+<a name="175"></a><div style="position: static;" class="nav-md"><ul style="position: static;" class="nav child_menu"><ul><li style="position: static;">.nav-md ul.nav.child_menu li:after</li></ul></ul></div><br style="clear: both">
+<a name="176"></a><div style="position: static;" class="nav-md"><ul style="position: static;" class="nav child_menu"><ul><li style="position: static;">.nav-md ul.nav.child_menu li:before</li></ul></ul></div><br style="clear: both">
+<a name="177"></a><div style="position: static;" class="bg-green menu2">.bg-green.menu2</div>
+<br style="clear: both">
+<a name="178"></a><div style="position: static;" class="bg-red menu4">.bg-red.menu4</div>
+<br style="clear: both">
+<a name="179"></a><div style="position: static;" class="border-primary">.border-primary</div>
+<br style="clear: both">
+<a name="180"></a><div style="position: static;" class="info-box menus">.info-box.menus</div>
+<br style="clear: both">
+<a name="181"></a><div style="position: static;" class="btn-success contacts">.btn-success.contacts</div>
+<br style="clear: both">
+<a name="182"></a><div style="position: static;" class="btn-primary contacts">.btn-primary.contacts</div>
+<br style="clear: both">
+<a name="183"></a><label style="position: static;" class="joblabel">label.joblabel</label><br style="clear: both">
+<a name="184"></a><div style="position: static;" class="hr-line2"><hr style="position: static;"></div><br style="clear: both">
+<a name="185"></a><div style="position: static;" class="callout callout-success">.callout.callout-success</div>
+<br style="clear: both">
+<a name="186"></a><div style="position: static;" class="alert-success">.alert-success</div>
+<br style="clear: both">
+<a name="187"></a><div style="position: static;" class="label-success">.label-success</div>
+<br style="clear: both">
+<a name="188"></a><div style="position: static;" class="modal-success"><div style="position: static;" class="modal-body joblist_label">.modal-success .modal-body.joblist_label</div>
+</div><br style="clear: both">
+<a name="189"></a><div style="position: static;" class="bg-red">.bg-red</div>
+<br style="clear: both">
+<a name="190"></a><div style="position: static;" class="callout callout-danger">.callout.callout-danger</div>
+<br style="clear: both">
+<a name="191"></a><div style="position: static;" class="alert-danger">.alert-danger</div>
+<br style="clear: both">
+<a name="192"></a><div style="position: static;" class="alert-error">.alert-error</div>
+<br style="clear: both">
+<a name="193"></a><div style="position: static;" class="label-danger">.label-danger</div>
+<br style="clear: both">
+<a name="194"></a><div style="position: static;" class="modal-danger"><div style="position: static;" class="modal-body joblist_label">.modal-danger .modal-body.joblist_label</div>
+</div><br style="clear: both">
+<a name="195"></a><div style="position: static;" class="bg-yellow">.bg-yellow</div>
+<br style="clear: both">
+<a name="196"></a><div style="position: static;" class="callout callout-warning">.callout.callout-warning</div>
+<br style="clear: both">
+<a name="197"></a><div style="position: static;" class="alert-warning">.alert-warning</div>
+<br style="clear: both">
+<a name="198"></a><div style="position: static;" class="label-warning">.label-warning</div>
+<br style="clear: both">
+<a name="199"></a><div style="position: static;" class="modal-warning"><div style="position: static;" class="modal-body joblist_label">.modal-warning .modal-body.joblist_label</div>
+</div><br style="clear: both">
+<a name="200"></a><div style="position: static;" class="label-primary joblist_label">.label-primary.joblist_label</div>
+<br style="clear: both">
+<a name="201"></a><div style="position: static;" class="btn-success reason">.btn-success.reason</div>
+<br style="clear: both">
+<a name="202"></a><div style="position: static;" class="btn-success reason">.btn-success.reason:hover</div>
+<br style="clear: both">
+<a name="203"></a><h4 style="position: static;" class="faq-header">h4.faq-header</h4><br style="clear: both">
+<a name="204"></a><div style="position: static;" class="panel-default"><div style="position: static;" class="panel-heading"></div><div style="position: static;" class="panel-collapse"><div style="position: static;" class="panel-body faq-body">.panel-default>.panel-heading+.panel-collapse>.panel-body.faq-body</div>
+</div></div><br style="clear: both">
+<a name="205"></a><div style="position: static;" class="panel-heading"><div style="position: static;">.panel-heading [data-toggle="collapse"]:after</div>
+</div><br style="clear: both">
+<a name="206"></a><div style="position: static;" class="panel-heading"><div style="position: static;" class="collapsed">.panel-heading [data-toggle="collapse"].collapsed:after</div>
+</div><br style="clear: both">
+<a name="207"></a><div style="position: static;" class="panel-title faq-title">.panel-title.faq-title</div>
+<br style="clear: both">
+<a name="208"></a><div style="position: static;" class="panel-default"><div style="position: static;" class="panel-heading">.panel-default>.panel-heading</div>
+</div><br style="clear: both">
+<a name="209"></a><div style="position: static;" class="faq-title"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.faq-title a:focus</a></div><br style="clear: both">
+<a name="210"></a><div style="position: static;" class="faq-title"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.faq-title a:hover</a></div><br style="clear: both">
+<a name="211"></a><input value="input[type=file]" style="position: static;"><br style="clear: both">
+<a name="212"></a><div style="position: static;" class="btn-primary job_form_submit">.btn-primary.job_form_submit</div>
+<br style="clear: both">
+<a name="213"></a><div style="position: static;" class="btn-primary job_form_submit">.btn-primary.job_form_submit:hover</div>
+<br style="clear: both">
+<a name="214"></a><textarea style="position: static;" class="form-control introduction">textarea.form-control.introduction</textarea><br style="clear: both">
+<a name="215"></a><div style="position: static;" class="btn-success contact_submit">.btn-success.contact_submit</div>
+<br style="clear: both">
+<a name="216"></a><textarea style="position: static;" class="form-control contact">textarea.form-control.contact</textarea><br style="clear: both">
+<a name="217"></a><div style="position: static;" class="table"><tbody style="position: static;"><tr style="position: static;"><table><tr><td style="position: static;">.table>tbody>tr>td</td></tr></table></tr></tbody></div><br style="clear: both">
+<a name="218"></a><div style="position: static;" class="table"><tbody style="position: static;"><tr style="position: static;"><th style="position: static;">.table>tbody>tr>th</th></tr></tbody></div><br style="clear: both">
+<a name="219"></a><div style="position: static;" class="table"><tfoot style="position: static;"><tr style="position: static;"><table><tr><td style="position: static;">.table>tfoot>tr>td</td></tr></table></tr></tfoot></div><br style="clear: both">
+<a name="220"></a><div style="position: static;" class="table"><tfoot style="position: static;"><tr style="position: static;"><th style="position: static;">.table>tfoot>tr>th</th></tr></tfoot></div><br style="clear: both">
+<a name="221"></a><div style="position: static;" class="table"><thead style="position: static;"><tr style="position: static;"><table><tr><td style="position: static;">.table>thead>tr>td</td></tr></table></tr></thead></div><br style="clear: both">
+<a name="222"></a><div style="position: static;" class="table"><thead style="position: static;"><tr style="position: static;"><th style="position: static;">.table>thead>tr>th</th></tr></thead></div><br style="clear: both">
+<a name="223"></a><div style="position: static;" class="input-group-btn"><div style="position: static;" class="btn">.input-group-btn > .btn:active</div>
+</div><br style="clear: both">
+<a name="224"></a><div style="position: static;" class="input-group-btn"><div style="position: static;" class="btn">.input-group-btn > .btn:focus</div>
+</div><br style="clear: both">
+<a name="225"></a><div style="position: static;" class="input-group-btn"><div style="position: static;" class="btn">.input-group-btn > .btn:hover</div>
+</div><br style="clear: both">
+<a name="226"></a><div style="position: static;" class="top_search"><div style="position: static;" class="input-group-btn"><button style="position: static;">.top_search .input-group-btn button</button></div></div><br style="clear: both">
+<a name="227"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-content">.menus .info-box-content</div>
+</div><br style="clear: both">
+<a name="228"></a><div style="position: static;" class="nav"><li style="position: static;"><a style="position: static;"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .nav>li>a>img</a></li></div><br style="clear: both">
+<a name="229"></a><div style="position: static;" class="t2">.t2</div>
+<br style="clear: both">
+<a name="230"></a><div style="position: static;" class="select-dropdowns">.select-dropdowns</div>
+<br style="clear: both">
+<a name="231"></a><div style="position: static;" class="tafsm">.tafsm</div>
+<br style="clear: both">
+<a name="232"></a><div style="position: static;" class="tafsbox info-box">.tafsbox.info-box</div>
+<br style="clear: both">
+<a name="233"></a><div style="position: static;" class="tafsim">.tafsim</div>
+<br style="clear: both">
+<a name="234"></a><div style="position: static;" class="group4719">.group4719</div>
+<br style="clear: both">
+<a name="235"></a><div style="position: static;" class="percent80">.percent80</div>
+<br style="clear: both">
+<a name="236"></a><div style="position: static;" class="pb102 progress">.pb102.progress</div>
+<br style="clear: both">
+<a name="237"></a><div style="position: static;" class="pb102"><div style="position: static;" class="progress-bar">.pb102 .progress-bar</div>
+</div><br style="clear: both">
+<a name="238"></a><div style="position: static;" class="pb102a">.pb102a</div>
+<br style="clear: both">
+<a name="239"></a><div style="position: static;" class="pb25000 progress">.pb25000.progress</div>
+<br style="clear: both">
+<a name="240"></a><div style="position: static;" class="pb25000"><div style="position: static;" class="progress-bar">.pb25000 .progress-bar</div>
+</div><br style="clear: both">
+<a name="241"></a><div style="position: static;" class="pb25000a">.pb25000a</div>
+<br style="clear: both">
+<a name="242"></a><div style="position: static;" class="img102">.img102</div>
+<br style="clear: both">
+<a name="243"></a><div style="position: static;" class="img102">.img102</div>
+<br style="clear: both">
+<a name="244"></a><div style="position: static;" class="img25000">.img25000</div>
+<br style="clear: both">
+<a name="245"></a><div style="position: static;" class="img25000">.img25000</div>
+<br style="clear: both">
+<a name="246"></a><div style="position: static;" class="t102">.t102</div>
+<br style="clear: both">
+<a name="247"></a><div style="position: static;" class="t200">.t200</div>
+<br style="clear: both">
+<a name="248"></a><div style="position: static;" class="c25000">.c25000</div>
+<br style="clear: both">
+<a name="249"></a><div style="position: static;" class="l102 info-box">.l102.info-box</div>
+<br style="clear: both">
+<a name="250"></a><div style="position: static;" class="hilqatbox">.hilqatbox</div>
+<br style="clear: both">
+<a name="251"></a><div style="position: static;" class="hilqat">.hilqat</div>
+<br style="clear: both">
+<a name="252"></a><div style="position: static;" class="box2500 info-box">.box2500.info-box</div>
+<br style="clear: both">
+<a name="253"></a><div style="position: static;" class="b2500">.b2500</div>
+<br style="clear: both">
+<a name="254"></a><div style="position: static;" class="t2500">.t2500</div>
+<br style="clear: both">
+<a name="255"></a><div style="position: static;" class="c3000">.c3000</div>
+<br style="clear: both">
+<a name="256"></a><div style="position: static;" class="greenimg">.greenimg</div>
+<br style="clear: both">
+<a name="257"></a><div style="position: static;" class="gmimg">.gmimg</div>
+<br style="clear: both">
+<a name="258"></a><div style="position: static;" class="hilqatmb info-box">.hilqatmb.info-box</div>
+<br style="clear: both">
+<a name="259"></a><div style="position: static;" class="amrbin">.amrbin</div>
+<br style="clear: both">
+<a name="260"></a><div style="position: static;" class="hil-amr-box">.hil-amr-box</div>
+<br style="clear: both">
+<a name="261"></a><div style="position: static;" class="ajmath-mt">.ajmath-mt</div>
+<br style="clear: both">
+<a name="262"></a><div style="position: static;" class="hasr">.hasr</div>
+<br style="clear: both">
+<a name="263"></a><div style="position: static;" class="hilqat-pb">.hilqat-pb</div>
+<br style="clear: both">
+<a name="264"></a><div style="position: static;" class="hilqat-p2">.hilqat-p2</div>
+<br style="clear: both">
+<a name="265"></a><div style="position: static;" class="img102a">.img102a</div>
+<br style="clear: both">
+<a name="266"></a><div style="position: static;" class="img102a">.img102a</div>
+<br style="clear: both">
+<a name="267"></a><div style="position: static;" class="c25000a">.c25000a</div>
+<br style="clear: both">
+<a name="268"></a><div style="position: static;" class="c25000a1">.c25000a1</div>
+<br style="clear: both">
+<a name="269"></a><div style="position: static;" class="cs200">.cs200</div>
+<br style="clear: both">
+<a name="270"></a><div style="position: static;" class="tasm">.tasm</div>
+<br style="clear: both">
+<a name="271"></a><div style="position: static;" class="avjath">.avjath</div>
+<br style="clear: both">
+<a name="272"></a><div style="position: static;" class="abdl-ahmd">.abdl-ahmd</div>
+<br style="clear: both">
+<a name="273"></a><div style="position: static;" class="cb">.cb</div>
+<br style="clear: both">
+<a name="274"></a><div style="position: static;" class="n1">.n1</div>
+<br style="clear: both">
+<a name="275"></a><div style="position: static;" class="percent92">.percent92</div>
+<br style="clear: both">
+<a name="276"></a><div style="position: static;" class="pb92"><div style="position: static;" class="progress-bar">.pb92 .progress-bar</div>
+</div><br style="clear: both">
+<a name="277"></a><div style="position: static;" class="pb92 progress">.pb92.progress</div>
+<br style="clear: both">
+<a name="278"></a><div style="position: static;" class="n14">.n14</div>
+<br style="clear: both">
+<a name="279"></a><div style="position: static;" class="n30">.n30</div>
+<br style="clear: both">
+<a name="280"></a><div style="position: static;" class="n14a">.n14a</div>
+<br style="clear: both">
+<a name="281"></a><div style="position: static;" class="n14b">.n14b</div>
+<br style="clear: both">
+<a name="282"></a><div style="position: static;" class="box92">.box92</div>
+<br style="clear: both">
+<a name="283"></a><div style="position: static;" class="abdlrow">.abdlrow</div>
+<br style="clear: both">
+<a name="284"></a><div style="position: static;" class="percent50">.percent50</div>
+<br style="clear: both">
+<a name="285"></a><div style="position: static;" class="pb50p progress-bar">.pb50p.progress-bar</div>
+<br style="clear: both">
+<a name="286"></a><div style="position: static;" class="percent20">.percent20</div>
+<br style="clear: both">
+<a name="287"></a><div style="position: static;" class="pb20p progress-bar">.pb20p.progress-bar</div>
+<br style="clear: both">
+<a name="288"></a><div style="position: static;" class="active-sd">.active-sd</div>
+<br style="clear: both">
+<a name="289"></a><div style="position: static;" class="ajmath"><div style="position: static;">.ajmath (@media(min-width:1200px))</div>
+</div><br style="clear: both">
+<a name="290"></a><div style="position: static;" class="abdl-clickm"><div style="position: static;">.abdl-clickm (@media(min-width:1200px))</div>
+</div><br style="clear: both">
+<a name="291"></a><div style="position: static;" class="asmlrow"><div style="position: static;">.asmlrow (@media(min-width:1200px))</div>
+</div><br style="clear: both">
+<a name="292"></a><div style="position: static;" class="info-box-content"><div style="position: static;">.info-box-content (@media only screen and (max-width: 1200px) and (min-width: 991px))</div>
+</div><br style="clear: both">
+<a name="293"></a><div style="position: static;" class="info-box-number"><div style="position: static;">.info-box-number (@media only screen and (max-width: 1200px) and (min-width: 991px))</div>
+</div><br style="clear: both">
+<a name="294"></a><div style="position: static;" class="info-box-text"><div style="position: static;">.info-box-text (@media only screen and (max-width: 1200px) and (min-width: 991px))</div>
+</div><br style="clear: both">
+<a name="295"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-content"><div style="position: static;">.menus .info-box-content (@media only screen and (max-width: 1200px) and (min-width: 991px))</div>
+</div></div><br style="clear: both">
+<a name="296"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-text"><div style="position: static;">.menus .info-box-text (@media only screen and (max-width: 1200px) and (min-width: 991px))</div>
+</div></div><br style="clear: both">
+<a name="297"></a><div style="position: static;" class="ajmath"><div style="position: static;">.ajmath (@media only screen and (max-width: 1200px) and (min-width: 991px))</div>
+</div><br style="clear: both">
+<a name="298"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-content"><div style="position: static;">.menus .info-box-content (@media only screen and (max-width: 991px) and (min-width: 767px))</div>
+</div></div><br style="clear: both">
+<a name="299"></a><div style="position: static;" class="mid-row3-icon1"><div style="position: static;">.mid-row3-icon1 (@media only screen and (max-width: 991px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="300"></a><div style="position: static;" class="mid-row3-icon3"><div style="position: static;">.mid-row3-icon3 (@media only screen and (max-width: 991px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="301"></a><div style="position: static;" class="mid-row3-icon4"><div style="position: static;">.mid-row3-icon4 (@media only screen and (max-width: 991px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="302"></a><div style="position: static;" class="ajmath"><div style="position: static;">.ajmath (@media only screen and (max-width: 991px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="303"></a><div style="position: static;" class="top-search-box"><div style="position: static;">.top-search-box (@media only screen and (max-width: 1200px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="304"></a><div style="position: static;" class="topheader"><div style="position: static;">.topheader (@media only screen and (max-width: 1200px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="305"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="info-box-text"><div style="position: static;">.nav-sm .info-box-text (@media only screen and (max-width: 1200px) and (min-width: 767px))</div>
+</div></div><br style="clear: both">
+<a name="306"></a><div style="position: static;" class="ajmath"><div style="position: static;">.ajmath (@media only screen and (max-width: 1200px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="307"></a><div style="position: static;" class="pb102 progress"><div style="position: static;">.pb102.progress (@media only screen and (max-width: 1200px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="308"></a><div style="position: static;" class="tafsbox info-box"><div style="position: static;">.tafsbox.info-box (@media only screen and (max-width: 1200px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="309"></a><div style="position: static;" class="topheader"><div style="position: static;">.topheader (@media (max-width:768px))</div>
+</div><br style="clear: both">
+<a name="310"></a><div style="position: static;" class="ajmath"><div style="position: static;">.ajmath (@media (max-width:768px))</div>
+</div><br style="clear: both">
+<a name="311"></a><div style="position: static;" class="mobile-nav-btn"><div style="position: static;">.mobile-nav-btn (@media(min-width:576px))</div>
+</div><br style="clear: both">
+<a name="312"></a><div style="position: static;" class="homepage"><div style="position: static;">.homepage (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="313"></a><div style="position: static;" class="nav-md"><div style="position: static;" class="navbar-nav"><div style="position: static;" class="open"><div style="position: static;" class="dropdown-menu search-down"><div style="position: static;">.nav-md .navbar-nav .open .dropdown-menu.search-down (@media (max-width:480px))</div>
+</div></div></div></div><br style="clear: both">
+<a name="314"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="navbar-nav"><div style="position: static;" class="open"><div style="position: static;" class="dropdown-menu search-down"><div style="position: static;">.nav-sm .navbar-nav .open .dropdown-menu.search-down (@media (max-width:480px))</div>
+</div></div></div></div><br style="clear: both">
+<a name="315"></a><div style="position: static;" class="info-box-content"><div style="position: static;">.info-box-content (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="316"></a><div style="position: static;" class="nav-sm"><div style="position: static;" class="info-box-content"><div style="position: static;">.nav-sm .info-box-content (@media (max-width:480px))</div>
+</div></div><br style="clear: both">
+<a name="317"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="navbar-right"><div style="position: static;">.top_nav .navbar-right (@media (max-width:480px))</div>
+</div></div><br style="clear: both">
+<a name="318"></a><div style="position: static;" class="nav navbar-nav"><li style="position: static;"><a style="position: static;"><div style="position: static;">.nav.navbar-nav > li > a (@media (max-width:480px))</div>
+</a></li></div><br style="clear: both">
+<a name="319"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="navbar-right"><li style="position: static;"><div style="position: static;">.top_nav .navbar-right li (@media (max-width:480px))</div>
+</li></div></div><br style="clear: both">
+<a name="320"></a><div style="position: static;" class="toggle"><div style="position: static;">.toggle (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="321"></a><div style="position: static;" class="topheader"><h6 style="position: static;"><div style="position: static;">.topheader h6 (@media (max-width:480px))</div>
+</h6></div><br style="clear: both">
+<a name="322"></a><div style="position: static;" class="dropdown_btn"><div style="position: static;">.dropdown_btn (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="323"></a><div style="position: static;" class="progress progress_sm"><div style="position: static;">.progress.progress_sm (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="324"></a><div style="position: static;" class="progress_btn1"><div style="position: static;">.progress_btn1 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="325"></a><div style="position: static;" class="top-search-box"><div style="position: static;">.top-search-box (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="326"></a><div style="position: static;" class="logo"><div style="position: static;">.logo (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="327"></a><div style="position: static;" id="date"><div style="position: static;">#date (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="328"></a><div style="position: static;" class="nav-sm"><div style="position: static;" id="date"><div style="position: static;">.nav-sm #date (@media (max-width:480px))</div>
+</div></div><br style="clear: both">
+<a name="329"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-content"><div style="position: static;">.menus .info-box-content (@media (max-width:480px))</div>
+</div></div><br style="clear: both">
+<a name="330"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-text"><div style="position: static;">.menus .info-box-text (@media (max-width:480px))</div>
+</div></div><br style="clear: both">
+<a name="331"></a><div style="position: static;" class="menus"><div style="position: static;" class="info-box-number"><div style="position: static;">.menus .info-box-number (@media (max-width:480px))</div>
+</div></div><br style="clear: both">
+<a name="332"></a><div style="position: static;" class="btn-success reason"><div style="position: static;">.btn-success.reason (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="333"></a><div style="position: static;" class="mid-down-img1"><div style="position: static;">.mid-down-img1 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="334"></a><div style="position: static;" class="mid-down-img2"><div style="position: static;">.mid-down-img2 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="335"></a><div style="position: static;" class="mid-down-img3"><div style="position: static;">.mid-down-img3 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="336"></a><div style="position: static;" class="mobile-down-imgs"><div style="position: static;">.mobile-down-imgs (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="337"></a><div style="position: static;" class="mid-down-imgs"><div style="position: static;">.mid-down-imgs (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="338"></a><div style="position: static;" class="mid-row3-icon1"><div style="position: static;">.mid-row3-icon1 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="339"></a><div style="position: static;" class="mid-row3-icon3"><div style="position: static;">.mid-row3-icon3 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="340"></a><div style="position: static;" class="mid-row3-icon4"><div style="position: static;">.mid-row3-icon4 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="341"></a><div style="position: static;" class="span20"><div style="position: static;">.span20 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="342"></a><div style="position: static;" class="span250"><div style="position: static;">.span250 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="343"></a><div style="position: static;" class="span10"><div style="position: static;">.span10 (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="344"></a><div style="position: static;" class="tasjil"><div style="position: static;">.tasjil (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="345"></a><div style="position: static;" class="search-box"><div style="position: static;">.search-box (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="346"></a><div style="position: static;" class="bell-img"><div style="position: static;">.bell-img (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="347"></a><div style="position: static;" class="message-img"><div style="position: static;">.message-img (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="348"></a><div style="position: static;" class="pc-nav-btn"><div style="position: static;">.pc-nav-btn (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="349"></a><div style="position: static;" class="mobile-nav-btn"><div style="position: static;">.mobile-nav-btn (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="350"></a><div style="position: static;" class="alkul"><div style="position: static;" class="nav-tabs"><li style="position: static;"><a style="position: static;"><div style="position: static;">.alkul .nav-tabs>li>a (@media (max-width:480px))</div>
+</a></li></div></div><br style="clear: both">
+<a name="351"></a><div style="position: static;" class="ajmath"><div style="position: static;">.ajmath (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="352"></a><div style="position: static;" class="tasm"><div style="position: static;">.tasm (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="353"></a><div style="position: static;" class="abdlc"><div style="position: static;">.abdlc (@media (max-width:480px))</div>
+</div><br style="clear: both">
+<a name="354"></a><div style="position: static;" class="info-box-content"><div style="position: static;">.info-box-content (@media only screen and (max-width: 1360px) and (min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="355"></a><div style="position: static;" class="info-box-text"><div style="position: static;">.info-box-text (@media only screen and (max-width: 1360px) and (min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="356"></a><div style="position: static;" class="mid-user-img"><div style="position: static;">.mid-user-img (@media only screen and (max-width: 1200px) and (min-width: 576px))</div>
+</div><br style="clear: both">
+<a name="357"></a><div style="position: static;" class="mid-user-center"><div style="position: static;">.mid-user-center (@media only screen and (max-width: 1200px) and (min-width: 576px))</div>
+</div><br style="clear: both">
+<a name="358"></a><div style="position: static;" class="mid-row3-icon1-center"><div style="position: static;">.mid-row3-icon1-center (@media only screen and (max-width: 1200px) and (min-width: 576px))</div>
+</div><br style="clear: both">
+<a name="359"></a><div style="position: static;" class="mid-row3-icon2-center"><div style="position: static;">.mid-row3-icon2-center (@media only screen and (max-width: 1200px) and (min-width: 576px))</div>
+</div><br style="clear: both">
+<a name="360"></a><div style="position: static;" class="mid-row3-icon3-left"><div style="position: static;">.mid-row3-icon3-left (@media only screen and (max-width: 1200px) and (min-width: 576px))</div>
+</div><br style="clear: both">
+<a name="361"></a><div style="position: static;" class="mid-row3-icon4-left"><div style="position: static;">.mid-row3-icon4-left (@media only screen and (max-width: 1200px) and (min-width: 576px))</div>
+</div><br style="clear: both">
+<a name="362"></a><div style="position: static;" class="nt2"><div style="position: static;">.nt2 (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="363"></a><div style="position: static;" class="nt3"><div style="position: static;">.nt3 (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="364"></a><div style="position: static;" class="nt4"><div style="position: static;">.nt4 (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="365"></a><div style="position: static;" class="span20"><div style="position: static;">.span20 (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="366"></a><div style="position: static;" class="span250"><div style="position: static;">.span250 (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="367"></a><div style="position: static;" class="span10"><div style="position: static;">.span10 (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="368"></a><div style="position: static;" class="tasjil"><div style="position: static;">.tasjil (@media(min-width: 768px))</div>
+</div><br style="clear: both">
+<a name="369"></a><div style="position: static;" class="lineimg"><div style="position: static;">.lineimg (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="370"></a><div style="position: static;" class="abd-box"><div style="position: static;">.abd-box (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="371"></a><div style="position: static;" class="b2500a"><div style="position: static;">.b2500a (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="372"></a><div style="position: static;" class="info-box mid3"><div style="position: static;">.info-box.mid3 (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="373"></a><div style="position: static;" class="info-box"><div style="position: static;">.info-box (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="374"></a><div style="position: static;" class="mid-row3-icon1"><img style="position: static;"><div style="position: static;">.mid-row3-icon1 img (@media(max-width:1200px))</div>
+</img></div><br style="clear: both">
+<a name="375"></a><div style="position: static;" class="mid-row3-icon2"><img style="position: static;"><div style="position: static;">.mid-row3-icon2 img (@media(max-width:1200px))</div>
+</img></div><br style="clear: both">
+<a name="376"></a><div style="position: static;" class="mid-row3-icon3"><img style="position: static;"><div style="position: static;">.mid-row3-icon3 img (@media(max-width:1200px))</div>
+</img></div><br style="clear: both">
+<a name="377"></a><div style="position: static;" class="mid-row3-icon4"><img style="position: static;"><div style="position: static;">.mid-row3-icon4 img (@media(max-width:1200px))</div>
+</img></div><br style="clear: both">
+<a name="378"></a><div style="position: static;" class="abd-box"><div style="position: static;">.abd-box (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="379"></a><div style="position: static;" class="abdlrow"><div style="position: static;">.abdlrow (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="380"></a><div style="position: static;" class="ttc"><div style="position: static;">.ttc (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="381"></a><div style="position: static;" class="asmlrow"><div style="position: static;">.asmlrow (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="382"></a><div style="position: static;" class="n1"><div style="position: static;">.n1 (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="383"></a><div style="position: static;" class="hilqm"><div style="position: static;">.hilqm (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="384"></a><div style="position: static;" class="b2500a"><div style="position: static;">.b2500a (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="385"></a><div style="position: static;" class="tafsim"><div style="position: static;">.tafsim (@media(max-width:1200px))</div>
+</div><br style="clear: both">
+<a name="386"></a><div style="position: static;" class="modal-header">.modal-header</div>
+<br style="clear: both">
+<a name="387"></a><div style="position: static;" class="modal-footer">.modal-footer</div>
+<br style="clear: both">
+<a name="388"></a><div style="position: static;" class="modal-header"><div style="position: static;" class="close">.modal-header .close</div>
+</div><br style="clear: both">
+<a name="389"></a><div style="position: static;" class="modal-backdrop">.modal-backdrop</div>
+<br style="clear: both">
+<a name="390"></a><div style="position: static;" class="modal-title">.modal-title</div>
+<br style="clear: both">
+<a name="391"></a><label style="position: static;">label</label><br style="clear: both">
+<a name="392"></a><div style="position: static;" class="model"><div style="position: static;" class="form-group">.model .form-group</div>
+</div><br style="clear: both">
+<a name="393"></a><div style="position: static;" class="nav-justify-header">.nav-justify-header</div>
+<br style="clear: both">
+<a name="394"></a><div style="position: static;" class="nav-justify-header"><ul><li style="position: static;">.nav-justify-header li</li></ul></div><br style="clear: both">
+<a name="395"></a><div style="position: static;" class="cursor-pointer">.cursor-pointer</div>
+<br style="clear: both">
+<a name="396"></a><div style="position: static;" class="btn3"><div style="position: static;" class="fa-check">.btn3 .fa-check</div>
+</div><br style="clear: both">
+<a name="397"></a><div style="position: static;" class="label2">.label2</div>
+<br style="clear: both">
+<a name="398"></a><div style="position: static;" class="btn1 btn-primary">.btn1.btn-primary</div>
+<br style="clear: both">
+<a name="399"></a><div style="position: static;" class="btn1 btn-primary">.btn1.btn-primary:hover</div>
+<br style="clear: both">
+<a name="400"></a><div style="position: static;" class="btn1a btn-primary">.btn1a.btn-primary</div>
+<br style="clear: both">
+<a name="401"></a><div style="position: static;" class="btn1a btn-primary">.btn1a.btn-primary:hover</div>
+<br style="clear: both">
+<a name="402"></a><div style="position: static;" class="btn1a"><div style="position: static;" class="fa-check">.btn1a .fa-check</div>
+</div><br style="clear: both">
+<a name="403"></a><div style="position: static;" class="btn2 btn-primary">.btn2.btn-primary</div>
+<br style="clear: both">
+<a name="404"></a><div style="position: static;" class="btn2 btn-primary">.btn2.btn-primary:hover</div>
+<br style="clear: both">
+<a name="405"></a><div style="position: static;" class="btn3 btn-primary">.btn3.btn-primary</div>
+<br style="clear: both">
+<a name="406"></a><div style="position: static;" class="btn3 btn-primary">.btn3.btn-primary:hover</div>
+<br style="clear: both">
+<a name="407"></a><div style="position: static;" class="btn3 btn-primary">.btn3.btn-primary:focus</div>
+<br style="clear: both">
+<a name="408"></a><div style="position: static;" class="btn3 btn-primary">.btn3.btn-primary:active</div>
+<br style="clear: both">
+<a name="409"></a><div style="position: static;" class="btn4 btn-primary">.btn4.btn-primary</div>
+<br style="clear: both">
+<a name="410"></a><div style="position: static;" class="btn4 btn-primary">.btn4.btn-primary:hover</div>
+<br style="clear: both">
+<a name="411"></a><div style="position: static;" class="btn4 btn-primary">.btn4.btn-primary:focus</div>
+<br style="clear: both">
+<a name="412"></a><div style="position: static;" class="btn4 btn-primary">.btn4.btn-primary:active</div>
+<br style="clear: both">
+<a name="413"></a><div style="position: static;" class="btnspb">.btnspb</div>
+<br style="clear: both">
+<a name="414"></a><div style="position: static;" class="my-btn">.my-btn</div>
+<br style="clear: both">
+<a name="415"></a><div style="position: static;" class="my-btn"><div style="position: static;" class="fa-check">.my-btn .fa-check</div>
+</div><br style="clear: both">
+<a name="416"></a><div style="position: static;" class="my-btn3">.my-btn3</div>
+<br style="clear: both">
+<a name="417"></a><div style="position: static;" class="my-btn3"><div style="position: static;" class="fa-check">.my-btn3 .fa-check</div>
+</div><br style="clear: both">
+<a name="418"></a><hr style="position: static;" class="new1"><br style="clear: both">
+<a name="419"></a><div style="position: static;" class="fa-cogs">.fa-cogs</div>
+<br style="clear: both">
+<a name="420"></a><div style="position: static;" class="user">.user</div>
+<br style="clear: both">
+<a name="421"></a><div style="position: static;" class="nav-tabs">.nav-tabs</div>
+<br style="clear: both">
+<a name="422"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><div style="position: static;">.nav-tabs>li.active>a</div>
+</li></div><br style="clear: both">
+<a name="423"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs>li.active>a:focus</a></li></div><br style="clear: both">
+<a name="424"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs>li.active>a:hover</a></li></div><br style="clear: both">
+<a name="425"></a><div style="position: static;" class="nav-tabs"><li style="position: static;"><div style="position: static;">.nav-tabs>li>a</div>
+</li></div><br style="clear: both">
+<a name="426"></a><div style="position: static;" class="fa-plus">.fa-plus</div>
+<br style="clear: both">
+<a name="427"></a><div style="position: static;" class="zero0">.zero0</div>
+<br style="clear: both">
+<a name="428"></a><div style="position: static;" class="fa-minus">.fa-minus</div>
+<br style="clear: both">
+<a name="429"></a><div style="position: static;" class="selectoption">.selectoption</div>
+<br style="clear: both">
+<a name="430"></a><div style="position: static;" class="yavmul">.yavmul</div>
+<br style="clear: both">
+<a name="431"></a><div style="position: static;" class="yavmul"><h5 style="position: static;">.yavmul h5</h5></div><br style="clear: both">
+<a name="432"></a><div style="position: static;" class="yavmul"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .yavmul img</div><br style="clear: both">
+<a name="433"></a><div style="position: static;" class="yavmul2">.yavmul2</div>
+<br style="clear: both">
+<a name="434"></a><div style="position: static;" class="yavmul2"><h5 style="position: static;">.yavmul2 h5</h5></div><br style="clear: both">
+<a name="435"></a><div style="position: static;" class="yavmul2"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .yavmul2 img</div><br style="clear: both">
+<a name="436"></a><div style="position: static;" class="lastin"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .lastin img</div><br style="clear: both">
+<a name="437"></a><div style="position: static;" class="lastin"><span style="position: static;">.lastin span</span></div><br style="clear: both">
+<a name="438"></a><div style="position: static;" class="lastin"><h5 style="position: static;">.lastin h5</h5></div><br style="clear: both">
+<a name="439"></a><div style="position: static;" class="footerbtn4">.footerbtn4</div>
+<br style="clear: both">
+<a name="440"></a><div style="position: static;" class="s2502">.s2502</div>
+<br style="clear: both">
+<a name="441"></a><div style="position: static;" class="s52">.s52</div>
+<br style="clear: both">
+<a name="442"></a><div style="position: static;" class="s20a">.s20a</div>
+<br style="clear: both">
+<a name="443"></a><div style="position: static;" class="s20b">.s20b</div>
+<br style="clear: both">
+<a name="444"></a><div style="position: static;" class="btn24 btn-primary">.btn24.btn-primary</div>
+<br style="clear: both">
+<a name="445"></a><div style="position: static;" class="btn16 btn-primary">.btn16.btn-primary</div>
+<br style="clear: both">
+<a name="446"></a><div style="position: static;" class="btn16"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .btn16 img</div><br style="clear: both">
+<a name="447"></a><div style="position: static;" class="btn17 btn-primary">.btn17.btn-primary</div>
+<br style="clear: both">
+<a name="448"></a><div style="position: static;" class="btn17"><img src="file://C:\Program Files (x86)\WeBuilder 2020\data\resources\preview.png" style="position: static;"> .btn17 img</div><br style="clear: both">
+<a name="449"></a><div style="position: static;" class="closed-icon">.closed-icon</div>
+<br style="clear: both">
+<a name="450"></a><div style="position: static;" class="ellipse-btn">.ellipse-btn</div>
+<br style="clear: both">
+<a name="451"></a><div style="position: static;" class="secondr">.secondr</div>
+<br style="clear: both">
+<a name="452"></a><div style="position: static;" class="btnspb"><div style="position: static;">.btnspb (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="453"></a><div style="position: static;" class="btn3 btn-primary"><div style="position: static;">.btn3.btn-primary (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="454"></a><div style="position: static;" class="selectoption"><div style="position: static;">.selectoption (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="455"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a style="position: static;"><div style="position: static;">.nav-tabs>li.active>a (@media(min-width: 1200px))</div>
+</a></li></div><br style="clear: both">
+<a name="456"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a style="position: static;"><div style="position: static;">.nav-tabs>li.active>a:focus (@media(min-width: 1200px))</div>
+</a></li></div><br style="clear: both">
+<a name="457"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a style="position: static;"><div style="position: static;">.nav-tabs>li.active>a:hover (@media(min-width: 1200px))</div>
+</a></li></div><br style="clear: both">
+<a name="458"></a><div style="position: static;" class="nav-tabs"><li style="position: static;"><a style="position: static;"><div style="position: static;">.nav-tabs>li>a (@media(min-width: 1200px))</div>
+</a></li></div><br style="clear: both">
+<a name="459"></a><div style="position: static;" class="yavmul-mr"><div style="position: static;">.yavmul-mr (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="460"></a><div style="position: static;" class="secondr"><div style="position: static;">.secondr (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="461"></a><div style="position: static;" class="alhasr"><div style="position: static;">.alhasr (@media(min-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="462"></a><div style="position: static;" class="yavmul"><div style="position: static;" class="fa-chevron-right"><div style="position: static;">.yavmul .fa-chevron-right (@media(min-width: 1200px))</div>
+</div></div><br style="clear: both">
+<a name="463"></a><div style="position: static;" class="yavmul2"><div style="position: static;" class="fa-chevron-right"><div style="position: static;">.yavmul2 .fa-chevron-right (@media(min-width: 1200px))</div>
+</div></div><br style="clear: both">
+<a name="464"></a><div style="position: static;" class="my-btn"><div style="position: static;">.my-btn (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="465"></a><div style="position: static;" class="my-btn3"><div style="position: static;">.my-btn3 (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="466"></a><div style="position: static;" class="btn1 btn-primary"><div style="position: static;">.btn1.btn-primary (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="467"></a><div style="position: static;" class="btn1a btn-primary"><div style="position: static;">.btn1a.btn-primary (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="468"></a><div style="position: static;" class="btn2 btn-primary"><div style="position: static;">.btn2.btn-primary (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="469"></a><div style="position: static;" class="btn3 btn-primary"><div style="position: static;">.btn3.btn-primary (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="470"></a><div style="position: static;" class="mansure"><div style="position: static;">.mansure (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="471"></a><div style="position: static;" class="hasr"><div style="position: static;">.hasr (@media(max-width: 1200px))</div>
+</div><br style="clear: both">
+<a name="472"></a><div style="position: static;" class="closed-icon"><div style="position: static;">.closed-icon (@media only screen and (max-width: 991px) and (min-width: 767px))</div>
+</div><br style="clear: both">
+<a name="473"></a><div style="position: static;" class="checkbox-default"><label style="position: static;">.checkbox-default label</label></div><br style="clear: both">
+<a name="474"></a><div style="position: static;" class="checkbox-default checkbox-style-2"><label style="position: static;">.checkbox-default.checkbox-style-2 label</label></div><br style="clear: both">
+<a name="475"></a><div style="position: static;" class="checkbox-default"><input value=".checkbox-default input[type=checkbox]" style="position: static;"></div><br style="clear: both">
+<a name="476"></a><div style="position: static;" class="checkbox-default"><label style="position: static;">.checkbox-default label:after</label></div><br style="clear: both">
+<a name="477"></a><div style="position: static;" class="checkbox-default"><input style="position: static;"></input><label style="position: static;">.checkbox-default input[type=checkbox]:checked + label</label></div><br style="clear: both">
+<a name="478"></a><div style="position: static;" class="checkbox-default"><input style="position: static;"></input><label style="position: static;">.checkbox-default input[type=checkbox]:checked + label:after</label></div><br style="clear: both">
+<a name="479"></a><div style="position: static;" class="checkbox"><div style="position: static;">.checkbox div</div></div><br style="clear: both">
+<a name="480"></a><div style="position: static;" class="checkbox"><input value=".checkbox input[type=checkbox]" style="position: static;"></div><br style="clear: both">
+<a name="481"></a><div style="position: static;" class="checkbox"><label style="position: static;">.checkbox label</label></div><br style="clear: both">
+<a name="482"></a><div style="position: static;" class="checkbox"><label style="position: static;"><input style="position: static;"></input><div style="position: static;">.checkbox label input[type=checkbox]:checked + div</div></label></div><br style="clear: both">
+<a name="483"></a><div style="position: static;" class="checkbox"><label style="position: static;"><input style="position: static;"></input><div style="position: static;">.checkbox label input[type=checkbox]:checked + div:after</div></label></div><br style="clear: both">
+<a name="484"></a><div style="position: static;" class="radio"><div style="position: static;">.radio div</div></div><br style="clear: both">
+<a name="485"></a><div style="position: static;" class="radio"><input value=".radio input[type=radio]" style="position: static;"></div><br style="clear: both">
+<a name="486"></a><div style="position: static;" class="radio"><label style="position: static;">.radio label</label></div><br style="clear: both">
+<a name="487"></a><div style="position: static;" class="radio"><label style="position: static;"><input style="position: static;"></input><div style="position: static;">.radio label input[type=radio]:checked + div</div></label></div><br style="clear: both">
+<a name="488"></a><div style="position: static;" class="radio"><label style="position: static;"><input style="position: static;"></input><div style="position: static;">.radio label input[type=radio]:checked + div:after</div></label></div><br style="clear: both">
+<a name="489"></a><div style="position: static;" class="checkbox">.checkbox</div>
+<br style="clear: both">
+<a name="490"></a><div style="position: static;" class="radio">.radio</div>
+<br style="clear: both">
+<a name="491"></a><div style="position: static;" class="input-custom-group">.input-custom-group</div>
+<br style="clear: both">
+<a name="492"></a><div style="position: static;" class="input-custom-group"><div style="position: static;">.input-custom-group > div</div></div><br style="clear: both">
+<a name="493"></a><div style="position: static;" class="form-control">.form-control</div>
+<br style="clear: both">
+<a name="494"></a><div style="position: static;" id="plusMin">#plusMin</div>
+<br style="clear: both">
+<a name="495"></a><div style="position: static;" id="minusMin">#minusMin</div>
+<br style="clear: both">
+<a name="496"></a><div style="position: static;" id="plusMax">#plusMax</div>
+<br style="clear: both">
+<a name="497"></a><div style="position: static;" id="minusMax">#minusMax</div>
+<br style="clear: both">
+<a name="498"></a><div style="position: static;" class="modal-content"><div style="position: static;" class="row">.modal-content .row</div>
+</div><br style="clear: both">
+<a name="499"></a><div style="position: static;" class="nav-tabs">.nav-tabs</div>
+<br style="clear: both">
+<a name="500"></a><div style="position: static;" class="nav-tabs"><ul><li style="position: static;">.nav-tabs > li</li></ul></div><br style="clear: both">
+<a name="501"></a><div style="position: static;" class="nav-tabs"><li style="position: static;"><div style="position: static;">.nav-tabs > li > a</div>
+</li></div><br style="clear: both">
+<a name="502"></a><div style="position: static;" class="nav-tabs"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs > li > a:after</a></li></div><br style="clear: both">
+<a name="503"></a><div style="position: static;" class="nav-tabs"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs > li:last-child > a:after</a></li></div><br style="clear: both">
+<a name="504"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><div style="position: static;">.nav-tabs > li.active > a</div>
+</li></div><br style="clear: both">
+<a name="505"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs > li.active > a:focus</a></li></div><br style="clear: both">
+<a name="506"></a><div style="position: static;" class="nav-tabs"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs > li.active > a:hover</a></li></div><br style="clear: both">
+<a name="507"></a><div style="position: static;" class="top_nav"><div style="position: static;" class="nav"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.top_nav .nav > li > a:hover</a></li></div></div><br style="clear: both">
+<a name="508"></a><div style="position: static;" class="nav-justify-header">.nav-justify-header</div>
+<br style="clear: both">
+<a name="509"></a><div style="position: static;" class="color-light">.color-light</div>
+<br style="clear: both">
+<a name="510"></a><div style="position: static;" class="font-30">.font-30</div>
+<br style="clear: both">
+<a name="511"></a><div style="position: static;" class="card-student"><div style="position: static;" class="font-small">.card-student .font-small</div>
+</div><br style="clear: both">
+<a name="512"></a><div style="position: static;" class="card-student"><div style="position: static;" class="t2">.card-student .t2</div>
+</div><br style="clear: both">
+<a name="513"></a><div style="position: static;" class="card-student"><div style="position: static;" class="progress-bar-thin">.card-student .progress-bar-thin</div>
+</div><br style="clear: both">
+<a name="514"></a><div style="position: static;" class="card-student">.card-student:hover</div>
+<br style="clear: both">
+<a name="515"></a><div style="position: static;" class="card-student">.card-student:active</div>
+<br style="clear: both">
+<a name="516"></a><div style="position: static;" class="card-student">.card-student:focus</div>
+<br style="clear: both">
+<a name="517"></a><div style="position: static;" class="card-student active">.card-student.active</div>
+<br style="clear: both">
+<a name="518"></a><div style="position: static;" class="card-student boxs"><div style="position: static;" class="student-name">.card-student.boxs .student-name</div>
+</div><br style="clear: both">
+<a name="519"></a><div style="position: static;" class="card-student boxs2"><div style="position: static;" class="student-name">.card-student.boxs2 .student-name</div>
+</div><br style="clear: both">
+<a name="520"></a><div style="position: static;" class="boxs2"><div style="position: static;" class="checkbox-default"><input style="position: static;"></input><label style="position: static;">.boxs2 .checkbox-default input[type=checkbox]:checked + label</label></div></div><br style="clear: both">
+<a name="521"></a><div style="position: static;" class="boxs2"><div style="position: static;" class="checkbox-default"><input style="position: static;"></input><label style="position: static;">.boxs2 .checkbox-default input[type=checkbox]:checked + label:after</label></div></div><br style="clear: both">
+<a name="522"></a><div style="position: static;" class="boxs"><div style="position: static;" class="checkbox-default"><input style="position: static;"></input><label style="position: static;">.boxs .checkbox-default input[type=checkbox]:checked + label</label></div></div><br style="clear: both">
+<a name="523"></a><div style="position: static;" class="boxs"><div style="position: static;" class="checkbox-default"><input style="position: static;"></input><label style="position: static;">.boxs .checkbox-default input[type=checkbox]:checked + label:after</label></div></div><br style="clear: both">
+<a name="524"></a><div style="position: static;" class="card-student"><div style="position: static;" class="student-name">.card-student .student-name</div>
+</div><br style="clear: both">
+<a name="525"></a><div style="position: static;" class="card-student"><div style="position: static;" class="dropdown-menu">.card-student .dropdown-menu</div>
+</div><br style="clear: both">
+<a name="526"></a><div style="position: static;" class="card-student"><div style="position: static;" class="dropdown-menu">.card-student .dropdown-menu:after</div>
+</div><br style="clear: both">
+<a name="527"></a><div style="position: static;" class="card-student"><div style="position: static;" class="dropdown-menu"><li style="position: static;"><div style="position: static;">.card-student .dropdown-menu > li > a</div>
+</li></div></div><br style="clear: both">
+<a name="528"></a><div style="position: static;" class="card-student"><div style="position: static;" class="dropdown-menu"><li style="position: static;"><div style="position: static;">.card-student .dropdown-menu > li > a</div>
+</li></div></div><br style="clear: both">
+<a name="529"></a><div style="position: static;" class="card-student"><div style="position: static;" class="dropdown-menu"><li style="position: static;"><div style="position: static;">.card-student .dropdown-menu > li:last-child > a</div>
+</li></div></div><br style="clear: both">
+<a name="530"></a><div style="position: static;" class="card-student"><div style="position: static;" class="dropdown-menu"><li style="position: static;"><a style="position: static;"><div style="position: static;" class="color-red">.card-student .dropdown-menu > li > a > .color-red</div>
+</a></li></div></div><br style="clear: both">
+<a name="531"></a><div style="position: static;" class="card-student boxs2">.card-student.boxs2:hover</div>
+<br style="clear: both">
+<a name="532"></a><div style="position: static;" class="card-student boxs2">.card-student.boxs2:focus</div>
+<br style="clear: both">
+<a name="533"></a><div style="position: static;" class="card-student boxs2">.card-student.boxs2:active</div>
+<br style="clear: both">
+<a name="534"></a><div style="position: static;" class="card-student boxs2">.card-student.boxs2:hover</div>
+<br style="clear: both">
+<a name="535"></a><div style="position: static;" class="card-student boxs2">.card-student.boxs2:active</div>
+<br style="clear: both">
+<a name="536"></a><div style="position: static;" class="card-student boxs2">.card-student.boxs2:focus</div>
+<br style="clear: both">
+<a name="537"></a><div style="position: static;" class="card-student boxs2 active">.card-student.boxs2.active</div>
+<br style="clear: both">
+<a name="538"></a><div style="position: static;" class="card-student boxs">.card-student.boxs:hover</div>
+<br style="clear: both">
+<a name="539"></a><div style="position: static;" class="card-student boxs">.card-student.boxs:focus</div>
+<br style="clear: both">
+<a name="540"></a><div style="position: static;" class="card-student boxs">.card-student.boxs:active</div>
+<br style="clear: both">
+<a name="541"></a><div style="position: static;" class="card-student boxs">.card-student.boxs:hover</div>
+<br style="clear: both">
+<a name="542"></a><div style="position: static;" class="card-student boxs">.card-student.boxs:active</div>
+<br style="clear: both">
+<a name="543"></a><div style="position: static;" class="card-student boxs">.card-student.boxs:focus</div>
+<br style="clear: both">
+<a name="544"></a><div style="position: static;" class="card-student boxs active">.card-student.boxs.active</div>
+<br style="clear: both">
+<a name="545"></a><div style="position: static;" class="nav-tabs">.nav-tabs</div>
+<br style="clear: both">
+<a name="546"></a><div style="position: static;" class="nav-tabs nav-justified nav-tabs-custom"><li style="position: static;"><div style="position: static;">.nav-tabs.nav-justified.nav-tabs-custom > li > a</div>
+</li></div><br style="clear: both">
+<a name="547"></a><div style="position: static;" class="nav-tabs nav-tabs-custom"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs.nav-tabs-custom > li.active > a:after</a></li></div><br style="clear: both">
+<a name="548"></a><div style="position: static;" class="nav-tabs nav-tabs-custom"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs.nav-tabs-custom > li.active > a:after</a></li></div><br style="clear: both">
+<a name="549"></a><div style="position: static;" class="nav-tabs nav-tabs-custom"><li style="position: static;" class="active"><div style="position: static;">.nav-tabs.nav-tabs-custom > li.active > a</div>
+</li></div><br style="clear: both">
+<a name="550"></a><div style="position: static;" class="nav-tabs nav-tabs-custom"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs.nav-tabs-custom > li.active > a:focus</a></li></div><br style="clear: both">
+<a name="551"></a><div style="position: static;" class="nav-tabs nav-tabs-custom"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs.nav-tabs-custom > li.active > a:hover</a></li></div><br style="clear: both">
+<a name="552"></a><div style="position: static;" class="nav-tabs-custom"><li style="position: static;" class="active"><div style="position: static;">.nav-tabs-custom > li.active > a</div>
+</li></div><br style="clear: both">
+<a name="553"></a><div style="position: static;" class="nav-tabs-custom"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs-custom > li.active > a:focus</a></li></div><br style="clear: both">
+<a name="554"></a><div style="position: static;" class="nav-tabs-custom"><li style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs-custom > li.active > a:hover</a></li></div><br style="clear: both">
+<a name="555"></a><div style="position: static;" class="nav-tabs nav-justified nav-tabs-custom"><div style="position: static;" class="active"><div style="position: static;">.nav-tabs.nav-justified.nav-tabs-custom > .active > a</div>
+</div></div><br style="clear: both">
+<a name="556"></a><div style="position: static;" class="nav-tabs nav-justified nav-tabs-custom"><div style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs.nav-justified.nav-tabs-custom > .active > a:focus</a></div></div><br style="clear: both">
+<a name="557"></a><div style="position: static;" class="nav-tabs nav-justified nav-tabs-custom"><div style="position: static;" class="active"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-tabs.nav-justified.nav-tabs-custom > .active > a:hover</a></div></div><br style="clear: both">
+<a name="558"></a><div style="position: static;" class="ml-2">.ml-2</div>
+<br style="clear: both">
+<a name="559"></a><div style="position: static;" class="owl-next">.owl-next</div>
+<br style="clear: both">
+<a name="560"></a><div style="position: static;" class="owl-prev">.owl-prev</div>
+<br style="clear: both">
+<a name="561"></a><div style="position: static;" class="color-green">.color-green</div>
+<br style="clear: both">
+<a name="562"></a><div style="position: static;" class="color-red">.color-red</div>
+<br style="clear: both">
+<a name="563"></a><div style="position: static;" class="color-dark">.color-dark</div>
+<br style="clear: both">
+<a name="564"></a><div style="position: static;" class="color-light">.color-light</div>
+<br style="clear: both">
+<a name="565"></a><div style="position: static;" class="mid-user-img">.mid-user-img</div>
+<br style="clear: both">
+<a name="566"></a><div style="position: static;" class="mid-agancy-img">.mid-agancy-img</div>
+<br style="clear: both">
+<a name="567"></a><div style="position: static;" class="small-font">.small-font</div>
+<br style="clear: both">
+<a name="568"></a><div style="position: static;" class="large-font-4">.large-font-4</div>
+<br style="clear: both">
+<a name="569"></a><div style="position: static;" class="large-font-3">.large-font-3</div>
+<br style="clear: both">
+<a name="570"></a><div style="position: static;" class="large-font-2">.large-font-2</div>
+<br style="clear: both">
+<a name="571"></a><div style="position: static;" class="large-font-1">.large-font-1</div>
+<br style="clear: both">
+<a name="572"></a><div style="position: static;" class="p-1">.p-1</div>
+<br style="clear: both">
+<a name="573"></a><div style="position: static;" class="p-2">.p-2</div>
+<br style="clear: both">
+<a name="574"></a><div style="position: static;" class="pt-3">.pt-3</div>
+<br style="clear: both">
+<a name="575"></a><div style="position: static;" class="pb-3">.pb-3</div>
+<br style="clear: both">
+<a name="576"></a><div style="position: static;" class="pl-1">.pl-1</div>
+<br style="clear: both">
+<a name="577"></a><div style="position: static;" class="pr-1">.pr-1</div>
+<br style="clear: both">
+<a name="578"></a><div style="position: static;" class="border-left">.border-left</div>
+<br style="clear: both">
+<a name="579"></a><div style="position: static;" class="d-inline">.d-inline</div>
+<br style="clear: both">
+<a name="580"></a><div style="position: static;" class="d-block">.d-block</div>
+<br style="clear: both">
+<a name="581"></a><div style="position: static;" class="category">.category</div>
+<br style="clear: both">
+<a name="582"></a><div style="position: static;" class="category"><div style="position: static;">.category > div</div></div><br style="clear: both">
+<a name="583"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><label style="position: static;">.category .item label</label></div></div><br style="clear: both">
+<a name="584"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><label style="position: static;"><div style="position: static;">.category .item:first-child label > div</div></label></div></div><br style="clear: both">
+<a name="585"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><label style="position: static;"><div style="position: static;">.category .item label > div</div></label></div></div><br style="clear: both">
+<a name="586"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><div style="position: static;" class="check">.category .item .check</div>
+</div></div><br style="clear: both">
+<a name="587"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><div style="position: static;" class="check"><div style="position: static;">.category .item .check i</div>
+</div></div></div><br style="clear: both">
+<a name="588"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><div style="position: static;" class="title">.category .item .title</div>
+</div></div><br style="clear: both">
+<a name="589"></a><div style="position: static;" class="category"><div style="position: static;" class="item"><span style="position: static;">.category .item span:not(.title)</span></div></div><br style="clear: both">
+<a name="590"></a><div style="position: static;" class="category"><input value=".category input[type=checkbox]" style="position: static;"></div><br style="clear: both">
+<a name="591"></a><div style="position: static;" class="category"><input style="position: static;"></input><label style="position: static;"><div style="position: static;">.category input[type=checkbox]:checked + label > div</div></label></div><br style="clear: both">
+<a name="592"></a><div style="position: static;" class="category"><input style="position: static;"></input><label style="position: static;"><div style="position: static;" class="check">.category input[type=checkbox]:checked + label .check</div>
+</label></div><br style="clear: both">
+<a name="593"></a><div style="position: static;" class="category"><input style="position: static;"></input><label style="position: static;"><div style="position: static;" class="check"><div style="position: static;">.category input[type=checkbox]:checked + label .check i</div>
+</div></label></div><br style="clear: both">
+<a name="594"></a><div style="position: static;" class="btn5 btn-primary">.btn5.btn-primary</div>
+<br style="clear: both">
+<a name="595"></a><div style="position: static;" class="btn5 btn-primary">.btn5.btn-primary:hover</div>
+<br style="clear: both">
+<a name="596"></a><div style="position: static;" class="btn5 btn-primary">.btn5.btn-primary:focus</div>
+<br style="clear: both">
+<a name="597"></a><div style="position: static;" class="btn5 btn-primary">.btn5.btn-primary:active</div>
+<br style="clear: both">
+<a name="598"></a><div style="position: static;" class="btn5 btn-primary"><span style="position: static;">.btn5.btn-primary:hover span</span></div><br style="clear: both">
+<a name="599"></a><div style="position: static;" class="btn5 btn-primary"><span style="position: static;">.btn5.btn-primary:focus span</span></div><br style="clear: both">
+<a name="600"></a><div style="position: static;" class="btn5 btn-primary"><span style="position: static;">.btn5.btn-primary:active span</span></div><br style="clear: both">
+<a name="601"></a><div style="position: static;" class="owl-carousel-episode"><div style="position: static;" class="item"><label style="position: static;">.owl-carousel-episode .item label</label></div></div><br style="clear: both">
+<a name="602"></a><div style="position: static;" class="owl-carousel-episode"><div style="position: static;" class="item"><input value=".owl-carousel-episode .item input[type=radio]" style="position: static;"></div></div><br style="clear: both">
+<a name="603"></a><div style="position: static;" class="owl-carousel-episode"><div style="position: static;" class="item"><input style="position: static;"></input><label style="position: static;"><div style="position: static;" class="info-box">.owl-carousel-episode .item input[type=radio]:checked + label .info-box</div>
+</label></div></div><br style="clear: both">
+<a name="604"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li>.nav.side-menu > li > ul</li></ul></li></div><br style="clear: both">
+<a name="605"></a><div style="position: static;" class="nav side-menu"><li style="position: static;" class="active"><ul style="position: static;"><li>.nav.side-menu > li.active ul</li></ul></li></div><br style="clear: both">
+<a name="606"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li style="position: static;"><div style="position: static;">.nav.side-menu > li > ul > li > a</div>
+</li></ul></li></div><br style="clear: both">
+<a name="607"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav.side-menu > li > ul > li > a:hover</a></li></ul></li></div><br style="clear: both">
+<a name="608"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav.side-menu > li > ul > li > a:focus</a></li></ul></li></div><br style="clear: both">
+<a name="609"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav.side-menu > li > ul > li > a:active</a></li></ul></li></div><br style="clear: both">
+<a name="610"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li style="position: static;" class="active"><div style="position: static;">.nav.side-menu > li > ul > li.active > a</div>
+</li></ul></li></div><br style="clear: both">
+<a name="611"></a><div style="position: static;" class="nav side-menu"><li style="position: static;"><ul style="position: static;"><li style="position: static;"><a style="position: static;"><div style="position: static;">.nav.side-menu > li > ul > li > a i</div>
+</a></li></ul></li></div><br style="clear: both">
+<a name="612"></a><div style="position: static;" class="permission">.permission</div>
+<br style="clear: both">
+<a name="613"></a><div style="position: static;" class="permission"><div style="position: static;">.permission > div</div></div><br style="clear: both">
+<a name="614"></a><div style="position: static;" class="permission"><div style="position: static;"><input value=".permission > div > input" style="position: static;"></div></div><br style="clear: both">
+<a name="615"></a><div style="position: static;" class="permission"><div style="position: static;" class="to">.permission > div.to</div></div><br style="clear: both">
+<a name="616"></a><div style="position: static;" class="permission"><div style="position: static;"><div style="position: static;" class="fa">.permission > div .fa</div>
+</div></div><br style="clear: both">
+<a name="617"></a><div style="position: static;" class="permission-statictices">.permission-statictices</div>
+<br style="clear: both">
+<a name="618"></a><div style="position: static;" class="permission-footer">.permission-footer</div>
+<br style="clear: both">
+<a name="619"></a><div style="position: static;" class="permission-content modal-content"><div style="position: static;" class="row">.permission-content.modal-content .row</div>
+</div><br style="clear: both">
+<a name="620"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="day">.permission-content .day</div>
+</div><br style="clear: both">
+<a name="621"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="day-number">.permission-content .day-number</div>
+</div><br style="clear: both">
+<a name="622"></a><div style="position: static;" class="permission-statictices"><div style="position: static;" class="present">.permission-statictices .present</div>
+</div><br style="clear: both">
+<a name="623"></a><div style="position: static;" class="permission-statictices"><div style="position: static;" class="dely">.permission-statictices .dely</div>
+</div><br style="clear: both">
+<a name="624"></a><div style="position: static;" class="permission-statictices"><div style="position: static;" class="excused-absence">.permission-statictices .excused-absence</div>
+</div><br style="clear: both">
+<a name="625"></a><div style="position: static;" class="permission-statictices"><div style="position: static;" class="absence">.permission-statictices .absence</div>
+</div><br style="clear: both">
+<a name="626"></a><div style="position: static;" class="permission-statictices"><div style="position: static;"><div style="position: static;"><div style="position: static;">.permission-statictices > div > div > div</div></div></div></div><br style="clear: both">
+<a name="627"></a><div style="position: static;" class="permission-statictices"><div style="position: static;"><div style="position: static;"><div style="position: static;"><div style="position: static;">.permission-statictices > div > div > div > div</div></div></div></div></div><br style="clear: both">
+<a name="628"></a><div style="position: static;" class="permission-statictices"><div style="position: static;"><div style="position: static;"><div style="position: static;"><h1 style="position: static;">.permission-statictices > div > div > div h1</h1></div></div></div></div><br style="clear: both">
+<a name="629"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day">.permission-content .perest-day</div>
+</div><br style="clear: both">
+<a name="630"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;">.permission-content .perest-day > div</div></div></div><br style="clear: both">
+<a name="631"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="table">.permission-content .perest-day .table</div>
+</div></div><br style="clear: both">
+<a name="632"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="table"><div style="position: static;">.permission-content .perest-day .table > div</div></div></div></div><br style="clear: both">
+<a name="633"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="day">.permission-content .perest-day .day</div>
+</div></div><br style="clear: both">
+<a name="634"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="month">.permission-content .perest-day .month</div>
+</div></div><br style="clear: both">
+<a name="635"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="excused-absence">.permission-content .perest-day .excused-absence</div>
+</div></div><br style="clear: both">
+<a name="636"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="absent">.permission-content .perest-day .absent</div>
+</div></div><br style="clear: both">
+<a name="637"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="excused-absence">.permission-content .perest-day .excused-absence</div>
+</div></div><br style="clear: both">
+<a name="638"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="absent">.permission-content .perest-day .absent:after</div>
+</div></div><br style="clear: both">
+<a name="639"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="absent excused-absence">.permission-content .perest-day .absent.excused-absence:after</div>
+</div></div><br style="clear: both">
+<a name="640"></a><div style="position: static;" class="permission-content"><div style="position: static;" class="perest-day"><div style="position: static;" class="close">.permission-content .perest-day .close</div>
+</div></div><br style="clear: both">
+<a name="641"></a><div style="position: static;" class="table-div">.table-div</div>
+<br style="clear: both">
+<a name="642"></a><div style="position: static;" class="table-div"><div style="position: static;">.table-div > div</div></div><br style="clear: both">
+<a name="643"></a><div style="position: static;" class="info-box mid3 card-program">.info-box.mid3.card-program</div>
+<br style="clear: both">
+<a name="644"></a><div style="position: static;" class="info-box mid3 card-program">.info-box.mid3.card-program</div>
+<br style="clear: both">
+<a name="645"></a><div style="position: static;" class="progam-levels">.progam-levels</div>
+<br style="clear: both">
+<a name="646"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="level">.progam-levels .level</div>
+</div><br style="clear: both">
+<a name="647"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="level"><div style="position: static;" class="row"><div style="position: static;">.progam-levels .level > .row > div</div></div></div></div><br style="clear: both">
+<a name="648"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="level"><div style="position: static;" class="number">.progam-levels .level .number</div>
+</div></div><br style="clear: both">
+<a name="649"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="level"><div style="position: static;" class="option">.progam-levels .level .option</div>
+</div></div><br style="clear: both">
+<a name="650"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="level"><div style="position: static;" class="option">.progam-levels .level:hover .option</div>
+</div></div><br style="clear: both">
+<a name="651"></a><div style="position: static;" class="box-style-1">.box-style-1</div>
+<br style="clear: both">
+<a name="652"></a><div style="position: static;" class="box-style-1"><div style="position: static;">.box-style-1 > div</div></div><br style="clear: both">
+<a name="653"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="move">.progam-levels .move</div>
+</div><br style="clear: both">
+<a name="654"></a><div style="position: static;" class="progam-levels"><div style="position: static;" class="number">.progam-levels .number</div>
+</div><br style="clear: both">
+<a name="655"></a><div style="position: static;" class="box-style-1"><div style="position: static;">.box-style-1 > div:nth-child(2)</div></div><br style="clear: both">
+<a name="656"></a><div style="position: static;" class="box-style-1">.box-style-1:hover</div>
+<br style="clear: both">
+<a name="657"></a><div style="position: static;" class="box-style-1"><div style="position: static;" class="move">.box-style-1:hover .move</div>
+</div><br style="clear: both">
+<a name="658"></a><div style="position: static;" class="box-style-1"><div style="position: static;" class="number">.box-style-1:hover .number</div>
+</div><br style="clear: both">
+<a name="659"></a><div style="position: static;" class="nice-alert">.nice-alert</div>
+<br style="clear: both">
+<a name="660"></a><0% style="position: static;"><div style="position: static;">0% (@keyframes nice-alert)</div>
+</0%><br style="clear: both">
+<a name="661"></a><10% style="position: static;"><div style="position: static;">10% (@keyframes nice-alert)</div>
+</10%><br style="clear: both">
+<a name="662"></a><20% style="position: static;"><div style="position: static;">20% (@keyframes nice-alert)</div>
+</20%><br style="clear: both">
+<a name="663"></a><30% style="position: static;"><div style="position: static;">30% (@keyframes nice-alert)</div>
+</30%><br style="clear: both">
+<a name="664"></a><40% style="position: static;"><div style="position: static;">40% (@keyframes nice-alert)</div>
+</40%><br style="clear: both">
+<a name="665"></a><50% style="position: static;"><div style="position: static;">50% (@keyframes nice-alert)</div>
+</50%><br style="clear: both">
+<a name="666"></a><60% style="position: static;"><div style="position: static;">60% (@keyframes nice-alert)</div>
+</60%><br style="clear: both">
+<a name="667"></a><70% style="position: static;"><div style="position: static;">70% (@keyframes nice-alert)</div>
+</70%><br style="clear: both">
+<a name="668"></a><80% style="position: static;"><div style="position: static;">80% (@keyframes nice-alert)</div>
+</80%><br style="clear: both">
+<a name="669"></a><90% style="position: static;"><div style="position: static;">90% (@keyframes nice-alert)</div>
+</90%><br style="clear: both">
+<a name="670"></a><100% style="position: static;"><div style="position: static;">100% (@keyframes nice-alert)</div>
+</100%><br style="clear: both">
+<a name="671"></a><0% style="position: static;"><div style="position: static;">0% (@keyframes nice-alert-fade)</div>
+</0%><br style="clear: both">
+<a name="672"></a><25% style="position: static;"><div style="position: static;">25% (@keyframes nice-alert-fade)</div>
+</25%><br style="clear: both">
+<a name="673"></a><50% style="position: static;"><div style="position: static;">50% (@keyframes nice-alert-fade)</div>
+</50%><br style="clear: both">
+<a name="674"></a><75% style="position: static;"><div style="position: static;">75% (@keyframes nice-alert-fade)</div>
+</75%><br style="clear: both">
+<a name="675"></a><100% style="position: static;"><div style="position: static;">100% (@keyframes nice-alert-fade)</div>
+</100%><br style="clear: both">
+
+</body></html>

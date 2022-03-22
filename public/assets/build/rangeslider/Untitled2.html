@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>rangeslider.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    .range-slider {
+     display: inline-block;
+     width: 100%;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     position: relative;
+     padding-bottom: 15px;
+}
+ .range-slider > input {
+     opacity: 0;
+     width: 100%;
+     position: relative;
+     z-index: 5;
+     margin-top: 2px;
+     -webkit-appearance: none;
+}
+ .range-slider > input::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     z-index: 100;
+     position: relative;
+     width: 50px;
+     height: 30px;
+     -webkit-border-radius: 10px;
+}
+ .range-slider > span.slider-container {
+     display: inline-block;
+     min-height: 110px;
+     position: absolute;
+     top: 0px;
+     left: -8px;
+     right: 46px;
+     z-index: 3;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ .range-slider > span.slider-container > span.bar {
+     background-color: #e8e7e8;
+     display: inline-block;
+     position: absolute;
+     z-index: 1;
+     top: 12px;
+     left: 10px;
+     right: -42px;
+     height: 7px;
+     overflow: hidden;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     border-radius: 10px;
+}
+ .range-slider > span.slider-container > span.bar > span {
+     background: #4dcff6;
+     display: inline-block;
+     float: left;
+     height: 7px;
+     width: 0%;
+    cursor: pointer;
+}
+ .range-slider > span.slider-container > span.bar-btn {
+     display: inline-block;
+     position: absolute;        
+     padding-top: 8px;
+     font-weight: bold;
+     text-align: center;
+     left: -25px;
+     border-radius: 3px;
+}
+ .range-slider > span.slider-container > span.bar-btn:after {
+     content: "";
+     display: inline-block;
+     position: absolute;
+     left: 8px;
+     top: 1px;
+     z-index: 3;
+    -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    height: 25px;
+    width: 25px;
+    border-radius:100%;
+    background: #88ce37;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+
+</style>
+</head>
+<body>
+    <div>
+        <h2>Comparison to native element</h2>
+        <input class="slider" value="20" min="0" max="100" name="rangeslider" type="range" />
+    </div>
+    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script>
+    $("document").ready(function() {
+  $(".slider").rangeslider();
+});
+$.fn.rangeslider = function(options) {
+  var obj = this;
+  var defautValue = obj.attr("value");
+  obj.wrap("<span class='range-slider'></span>");
+  obj.after("<span class='slider-container'><span class='bar'><span></span></span><span class='bar-btn'></span></span>");
+  obj.attr("oninput", "updateSlider(this)");
+  updateSlider(this);
+  return obj;
+};
+
+function updateSlider(passObj) {
+  var obj = $(passObj);
+  var value = obj.val();
+  var min = obj.attr("min");
+  var max = obj.attr("max");
+  var range = Math.round(max - min);
+  var percentage = Math.round((value - min) * 100 / range);
+  var nextObj = obj.next();
+  nextObj.find("span.bar-btn").css("left", percentage + "%");
+  nextObj.find("span.bar > span").css("width", percentage + "%");
+};
+</script>
+
+</body>
+</html>

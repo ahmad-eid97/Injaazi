@@ -1,0 +1,11 @@
+@media (max-width:768px) {
+  .tahdid .item .dro {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width:768px) {
+  .tahdid .item .dro {
+    margin-top: 15px;
+  }
+}

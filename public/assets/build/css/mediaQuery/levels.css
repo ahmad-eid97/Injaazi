@@ -1,0 +1,18 @@
+@media (max-width:768px) {
+  .progam-levels {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .progam-levels .level .mb-1 {
+    padding: 0 !important;
+  }
+  .progam-levels .level img.books {
+    width: 17px !important;
+  }
+  .progam-levels .level img.faces {
+    width: 15px !important;
+  }
+  .expanding {
+    z-index: 2;
+  }
+}

@@ -1,0 +1,80 @@
+@media (max-width:768px) {
+  .episodesList {
+    margin-top: 135px !important;
+  }
+
+  h4.topLabel {
+    font-size: 16px;
+  }
+
+  .studentsHeader {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .studentsList .tahdid span, .studentsList .tahdid a h4 {
+    font-size: 15px !important;
+  }
+
+  .mid-row2 {
+    margin-bottom: 0 !important;
+  }
+
+  .studentLinePro {
+    display: block !important;
+    height: 0px !important;
+    margin-bottom: -100px !important;
+  }
+
+  .studentLinePro span.partName {
+    font-size: 12px !important;
+  }
+
+  .studentLinePro .progress  {
+    margin-top: 3px;
+  }
+
+  .fileReviewInNotification {
+    width: 100% !important;
+  }
+
+  .nav-tabs>li>a {
+    padding: 10px 2px !important;
+    font-size: 12px;
+  }
+
+  .man {
+    margin-top: -20px !important;
+  }
+
+  input, select {
+    padding-right: 10px !important;
+  }
+}
+
+/******************* GLOBAL STYLE FOR DROPDOWN DOTS IN CARDS ******************/
+a.dropDownDots {
+  padding: 5px;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .episodesList {
+    margin-top: 85px !important;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+  .studentsList .tahdid span, .studentsList .tahdid a h4 {
+    font-size: 15px !important;
+  }
+  .studentLinePro span.partName {
+    font-size: 12px !important;
+  }
+}
+
+/* CUSTOM QUERY FOR STUDENT CARD */
+@media (min-width:1600px) {
+  .col-xl-3 {
+    width: 25% !important;
+  }
+}

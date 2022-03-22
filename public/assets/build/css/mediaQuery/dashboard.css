@@ -1,0 +1,79 @@
+@media (max-width:768px) {
+  .statics select {
+    padding-right: 30px !important;
+  }
+
+  .statics .tafsim, .share .tafsim {
+    text-align: right !important;
+  }
+
+  .statics .tafsim h1, .share .tafsim h1 {
+    padding-right: 25px !important;
+  }
+
+  .statics .tafsim h4, .share .tafsim h4 {
+    padding-right: 15px !important;
+  }
+
+  .share .head img {
+    width: 100px !important;
+  }
+
+  .share .head h5 {
+    font-size: 14px !important;
+  }
+
+  .share .info-box {
+    height: auto !important;
+  }
+
+  .share .part .singleText {
+    margin-top: 10px !important;
+  }
+
+  .share .part .shareCategories {
+    margin-bottom: 10px;
+  }
+
+  .share .block:not(:last-of-type) {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media(min-width:768px) and (max-width:992px) {
+  .statics .tafsim {
+    text-align: right !important;
+  }
+
+  .statics .tafsim h1 {
+    padding-right: 25px !important;
+  }
+
+  .statics .tafsim h4 {
+    padding-right: 15px !important;
+  }
+
+  .share .info-box {
+    height: auto !important;
+  }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+  .statics .tafsim {
+    text-align: right !important;
+  }
+
+  .statics .tafsim h1 {
+    padding-right: 25px !important;
+  }
+
+  .statics .tafsim h4 {
+    padding-right: 15px !important;
+  }
+
+  .share .info-box {
+    height: auto !important;
+  }
+}

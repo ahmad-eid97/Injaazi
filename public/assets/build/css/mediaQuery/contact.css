@@ -1,0 +1,17 @@
+@media(max-width:768px) {
+  .moveOption {
+    padding: 0 !important;
+  }
+  .radio div {
+    padding: 10px 0 !important;
+  }
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+  .moveOption {
+    padding: 0 !important;
+  }
+  .radio div {
+    padding: 10px 0 !important;
+  }
+}

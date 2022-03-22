@@ -1,0 +1,82 @@
+@media(max-width:768px) {
+  .xsDisapear {
+    display: none !important;
+  }
+  .phoneDisapear {
+    display: none !important;
+  }
+
+  .extra-large-font-2 {
+    font-size: 45px !important;
+  }
+
+  .large-font-1 {
+    font-size: 18px !important;
+  }
+
+  .info-box {
+    margin-bottom: 20px !important;
+  }
+
+  .xsApear {
+    display: block !important;
+  }
+
+  .phoneText0 {
+    font-size: 8px !important;
+  }
+
+  .phoneText1 {
+    font-size: 14px !important;
+  }
+
+  .phoneText2 {
+    font-size: 16px !important;
+  }
+
+  .phoneText3 {
+    font-size: 19px !important;
+  }
+
+  .phoneText4 {
+    font-size: 22px !important;
+  }
+
+  img.smallImg {
+    width: 27px !important;
+  }
+  
+  .specButton {
+    text-align: right !important;
+  }
+
+}
+
+@media(min-width:768px) and (max-width:992px) {
+  .phoneDisapear {
+    display: none !important;
+  }
+  .extra-large-font-2 {
+    font-size: 55px !important;
+  }
+  .large-font-1 {
+    font-size: 21px !important;
+  }
+  .specButton {
+    text-align: right !important;
+  }
+}
+
+@media(min-width:768px) {
+  .xsApear {
+    display: none !important;
+  }
+}
+
+/* SPECIAL CARD STYLES */
+@media(min-width:500px) and (max-width:767px) {
+  .specCard {
+    width: 400px !important;
+    margin: 10px auto;
+  }
+}

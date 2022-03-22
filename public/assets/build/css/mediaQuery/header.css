@@ -1,0 +1,15 @@
+@media (max-width:768px) {
+  .mainDrop a.user-profile {
+    padding: 5px 10px !important;
+  }
+
+  .bell {
+    margin-left: 20px !important;
+  }
+
+  .message img.message-img {
+    width: 24px !important;
+    height: 17px !important;
+    margin-left: 5px !important;
+  }
+}
